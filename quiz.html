@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Science Quiz 🎯 | Science for Little Stars</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Teal accent for quiz page */
+    :root { --accent: #6366f1; --accent-light: #eef2ff; }
+
+    /* Quiz page specific styles */
+    .quiz-page { min-height: 100vh; }
+
+    /* Start screen */
+    .quiz-start {
+      text-align: center;
+      padding: var(--space-2xl) var(--space-lg);
+    }
+
+    .quiz-start__emoji {
+      font-size: 4rem;
+      margin-bottom: var(--space-md);
+      display: block;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .quiz-start__title {
+      font-size: var(--text-4xl);
+      margin-bottom: var(--space-sm);
+    }
+
+    .quiz-start__desc {
+      font-size: var(--text-lg);
+      color: var(--text-light);
+      max-width: 500px;
+      margin: 0 auto var(--space-lg);
+    }
+
+    /* How-to-play pills */
+    .quiz-rules {
+      display: flex;
+      gap: var(--space-sm);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: var(--space-xl);
+    }
+
+    .quiz-rule {
+      background: var(--gray-100);
+      border-radius: var(--radius-full);
+      padding: 0.5rem 1.2rem;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: var(--text-sm);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Chapter category filter */
+    .quiz-filter-section {
+      margin-bottom: var(--space-xl);
+    }
+
+    .quiz-filter-section h3 {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-md);
+      color: var(--text-light);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+
+    /* Big start button */
+    .quiz-start-btn {
+      font-size: var(--text-xl) !important;
+      padding: 1rem 2.5rem !important;
+      background: var(--accent) !important;
+      box-shadow: 0 6px 24px rgba(99,102,241,0.35) !important;
+    }
+
+    /* Score bar at top of question screen */
+    .quiz-score-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-md);
+      padding: var(--space-sm) var(--space-md);
+      background: var(--gray-100);
+      border-radius: var(--radius-md);
+    }
+
+    .quiz-score-bar__item {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: var(--text-base);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .quiz-score-bar__item span {
+      color: var(--accent);
+    }
+
+    /* Result actions */
+    .result-actions {
+      display: flex;
+      gap: var(--space-sm);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: var(--space-lg);
+    }
+
+    /* Result stats grid */
+    .result-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-sm);
+      margin: var(--space-lg) 0;
+    }
+
+    .result-stat {
+      background: var(--gray-100);
+      border-radius: var(--radius-md);
+      padding: var(--space-md);
+      text-align: center;
+    }
+
+    .result-stat__num {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: var(--text-2xl);
+      color: var(--accent);
+    }
+
+    .result-stat__label {
+      font-size: var(--text-xs);
+      color: var(--text-light);
+      margin-top: 0.2rem;
+    }
+  </style>
+</head>
+<body class="quiz-page">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><span>⭐</span> Science for Little Stars</a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="chapters/solar-system.html">Chapters</a>
+        <a href="quiz.html" class="active">Quiz</a>
+      </div>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile" id="nav-mobile">
+      <a href="index.html">🏠 Home</a>
+      <a href="chapters/solar-system.html">📚 Chapters</a>
+      <a href="quiz.html">🎯 Quiz</a>
+    </div>
+  </nav>
+
+  <!-- QUIZ APP WRAPPER -->
+  <div id="quiz-app">
+
+    <!-- ═══════════════════════════════════════════════
+         START SCREEN
+    ═══════════════════════════════════════════════ -->
+    <div id="quiz-start" class="quiz-start">
+      <span class="quiz-start__emoji">🎯</span>
+      <h1 class="quiz-start__title">Science Quiz Challenge!</h1>
+      <p class="quiz-start__desc">
+        Test everything you've learned across all 10 science chapters.
+        10 questions per session — with a 20-second timer for each!
+      </p>
+
+      <!-- How-to-play rules -->
+      <div class="quiz-rules">
+        <div class="quiz-rule">⏱️ 20 seconds per question</div>
+        <div class="quiz-rule">🎯 10 questions per game</div>
+        <div class="quiz-rule">✅ Instant feedback</div>
+        <div class="quiz-rule">🏆 5 badge tiers</div>
+      </div>
+
+      <!-- Category selector -->
+      <div class="quiz-filter-section">
+        <h3>Choose a chapter (or mix them all!):</h3>
+        <div class="quiz-categories">
+          <!-- data-chapter must match the chapter name in QUESTION_BANK exactly -->
+          <button class="quiz-cat-btn active" data-chapter="All">⭐ All Chapters</button>
+          <button class="quiz-cat-btn" data-chapter="Solar System">🌌 Solar System</button>
+          <button class="quiz-cat-btn" data-chapter="Plants">🌿 Plants</button>
+          <button class="quiz-cat-btn" data-chapter="Animals">🦁 Animals</button>
+          <button class="quiz-cat-btn" data-chapter="Five Senses">👁️ Five Senses</button>
+          <button class="quiz-cat-btn" data-chapter="Magnets">🧲 Magnets</button>
+          <button class="quiz-cat-btn" data-chapter="Weather">🌦️ Weather</button>
+          <button class="quiz-cat-btn" data-chapter="Simple Machines">⚙️ Machines</button>
+          <button class="quiz-cat-btn" data-chapter="Our Body">🫀 Our Body</button>
+          <button class="quiz-cat-btn" data-chapter="Energy &amp; Electricity">⚡ Energy</button>
+          <button class="quiz-cat-btn" data-chapter="Saving Our Planet">🌍 Planet</button>
+        </div>
+      </div>
+
+      <!-- Start button -->
+      <button class="btn btn--primary quiz-start-btn" id="start-quiz-btn">
+        🚀 Start the Quiz!
+      </button>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+         QUESTION SCREEN (hidden by default)
+    ═══════════════════════════════════════════════ -->
+    <div id="quiz-question-screen" style="display:none;">
+      <div class="quiz-container">
+
+        <!-- Score bar -->
+        <div class="quiz-score-bar">
+          <div class="quiz-score-bar__item">📊 <span id="q-count">Question 1 of 10</span></div>
+          <div class="quiz-score-bar__item">✅ Score: <span id="current-score">0</span></div>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="quiz-progress">
+          <div class="quiz-progress__bar">
+            <div class="quiz-progress__fill" id="progress-fill"></div>
+          </div>
+        </div>
+
+        <!-- Countdown timer (circular SVG) -->
+        <div class="quiz-timer">
+          <div class="quiz-timer__circle" role="timer" aria-label="Time remaining">
+            <!-- SVG ring that shrinks as time runs out -->
+            <svg class="quiz-timer__svg" viewBox="0 0 80 80">
+              <circle class="quiz-timer__track" cx="40" cy="40" r="35" />
+              <circle class="quiz-timer__ring" id="timer-ring" cx="40" cy="40" r="35" />
+            </svg>
+            <div class="quiz-timer__number" id="timer-number">20</div>
+          </div>
+        </div>
+
+        <!-- Question card -->
+        <div class="quiz-question">
+          <p class="quiz-question__text" id="question-text">Loading question...</p>
+          <div class="quiz-options" id="options-container">
+            <!-- Option buttons are injected here by JS -->
+          </div>
+        </div>
+
+        <!-- Answer feedback message -->
+        <div class="quiz-feedback" id="quiz-feedback"></div>
+
+        <!-- Next question button (shown after answering) -->
+        <button class="quiz-next" id="next-btn">Next Question →</button>
+
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+         RESULT SCREEN (hidden by default)
+    ═══════════════════════════════════════════════ -->
+    <div id="quiz-result" class="quiz-result" role="region" aria-label="Quiz result">
+      <div class="quiz-container">
+
+        <!-- Final progress bar (filled to 100%) -->
+        <div class="quiz-progress" style="margin-bottom: var(--space-md);">
+          <div class="quiz-progress__bar">
+            <div class="quiz-progress__fill" id="progress-fill-result" style="width:100%"></div>
+          </div>
+        </div>
+
+        <!-- Trophy emoji -->
+        <div class="quiz-result__trophy" id="result-trophy">🏆</div>
+
+        <!-- Title (changes based on score) -->
+        <h2 class="quiz-result__title" id="result-title">Amazing job!</h2>
+
+        <!-- Numeric score -->
+        <div class="quiz-result__score" id="result-score">10 / 10</div>
+
+        <!-- Badge tier label -->
+        <div class="quiz-result__badge" id="result-badge">🌟 Super Scientist!</div>
+
+        <!-- Stats grid -->
+        <div class="result-stats">
+          <div class="result-stat">
+            <div class="result-stat__num" id="stat-correct">0</div>
+            <div class="result-stat__label">Correct</div>
+          </div>
+          <div class="result-stat">
+            <div class="result-stat__num" id="stat-wrong">0</div>
+            <div class="result-stat__label">Incorrect</div>
+          </div>
+          <div class="result-stat">
+            <div class="result-stat__num" id="stat-pct">0%</div>
+            <div class="result-stat__label">Accuracy</div>
+          </div>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="result-actions">
+          <button class="btn btn--primary" id="play-again-btn">🔄 Play Again</button>
+          <a href="index.html" class="btn btn--outline">📚 Study Chapters</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /#quiz-app -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer__logo">⭐ Science for Little Stars</div>
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="chapters/solar-system.html">Chapters</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+      <p>Made with ❤️ for curious little scientists everywhere.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- Extra script: wire up score display & result stats -->
+  <script>
+    // Patch the showResult function to also populate result-stats
+    // This runs AFTER main.js so we can hook into the quiz result display
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // We intercept the "quiz-result visible" state to fill in stats
+      const observer = new MutationObserver(() => {
+        const result = document.getElementById('quiz-result');
+        if (result && result.classList.contains('visible')) {
+          // Extract score from the display text "X / 10"
+          const scoreText = document.getElementById('result-score').textContent;
+          const parts = scoreText.split('/');
+          if (parts.length === 2) {
+            const correct = parseInt(parts[0].trim());
+            const total   = parseInt(parts[1].trim());
+            const wrong   = total - correct;
+            const pct     = Math.round((correct / total) * 100);
+
+            document.getElementById('stat-correct').textContent = correct;
+            document.getElementById('stat-wrong').textContent   = wrong;
+            document.getElementById('stat-pct').textContent     = pct + '%';
+          }
+        }
+      });
+
+      const resultEl = document.getElementById('quiz-result');
+      if (resultEl) observer.observe(resultEl, { attributes: true, attributeFilter: ['class'] });
+
+      // Keep current score display updated via MutationObserver on score element
+      // (score is updated by main.js internally — this keeps the visible counter in sync)
+    });
+  </script>
+
+</body>
+</html>

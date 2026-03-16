@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Science for Little Stars ⭐ | Fun Science for Kids</title>
+  <meta name="description" content="An interactive science e-book for kids in Grades 1–3. Explore planets, plants, animals, the human body and more!" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Accent color for home page (green — general/brand color) -->
+  <style>
+    :root { --accent: #3cb35a; --accent-light: #d1fae5; }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <!-- Logo -->
+      <a href="index.html" class="nav__logo">
+        <span>⭐</span> Science for Little Stars
+      </a>
+
+      <!-- Desktop links -->
+      <div class="nav__links" role="menubar">
+        <a href="index.html" class="active" role="menuitem">Home</a>
+        <a href="chapters/solar-system.html" role="menuitem">Chapters</a>
+        <a href="quiz.html" role="menuitem">Quiz</a>
+        <a href="quiz.html" class="nav__cta" role="menuitem">🎯 Take the Quiz!</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="nav-mobile" role="menu">
+      <a href="index.html">🏠 Home</a>
+      <a href="chapters/solar-system.html">🌌 Solar System</a>
+      <a href="chapters/plants.html">🌿 Plants</a>
+      <a href="chapters/animals.html">🦁 Animals</a>
+      <a href="chapters/five-senses.html">👁️ Five Senses</a>
+      <a href="chapters/magnets.html">🧲 Magnets</a>
+      <a href="chapters/weather.html">🌦️ Weather</a>
+      <a href="chapters/simple-machines.html">⚙️ Simple Machines</a>
+      <a href="chapters/our-body.html">🫀 Our Body</a>
+      <a href="chapters/energy-electricity.html">⚡ Energy</a>
+      <a href="chapters/saving-our-planet.html">🌍 Saving Our Planet</a>
+      <a href="quiz.html">🎯 Take the Quiz!</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════════════════ -->
+  <section class="hero" role="banner">
+    <span class="hero__emoji" aria-hidden="true">🔭</span>
+    <h1 class="hero__title">Science for Little Stars</h1>
+    <p class="hero__sub">
+      Discover the wonders of science! Explore planets, plants, animals,
+      your body and so much more — made just for curious kids. 🌟
+    </p>
+    <div class="hero__buttons">
+      <a href="chapters/solar-system.html" class="btn btn--primary">🚀 Start Exploring</a>
+      <a href="quiz.html" class="btn btn--outline">🎯 Take the Quiz</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       STATS BAR
+  ═══════════════════════════════════════════════════════ -->
+  <section style="background: var(--gray-100); padding: var(--space-lg) var(--space-lg);">
+    <div class="container" style="display:flex; gap: var(--space-xl); justify-content: center; flex-wrap: wrap; text-align: center;">
+      <div>
+        <div style="font-family:'Nunito',sans-serif; font-weight:900; font-size: var(--text-3xl); color: var(--accent);">10</div>
+        <div style="color: var(--text-light); font-size: var(--text-sm);">Exciting Chapters</div>
+      </div>
+      <div>
+        <div style="font-family:'Nunito',sans-serif; font-weight:900; font-size: var(--text-3xl); color: var(--solar);">100+</div>
+        <div style="color: var(--text-light); font-size: var(--text-sm);">Fun Facts</div>
+      </div>
+      <div>
+        <div style="font-family:'Nunito',sans-serif; font-weight:900; font-size: var(--text-3xl); color: var(--magnets);">100</div>
+        <div style="color: var(--text-light); font-size: var(--text-sm);">Quiz Questions</div>
+      </div>
+      <div>
+        <div style="font-family:'Nunito',sans-serif; font-weight:900; font-size: var(--text-3xl); color: var(--senses);">Gr 1–3</div>
+        <div style="color: var(--text-light); font-size: var(--text-sm);">Perfect For Ages 6–9</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       CHAPTERS GRID
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center" style="margin: 0 auto var(--space-xl);">
+        <div class="section-header__label">📚 All Chapters</div>
+        <h2 class="section-header__title">Choose a Topic to Explore</h2>
+        <p class="section-header__desc">Each chapter is packed with fun facts, cool activities, and interactive challenges!</p>
+      </div>
+
+      <div class="chapters-grid">
+
+        <!-- Chapter 1: Solar System -->
+        <a href="chapters/solar-system.html" class="chapter-card reveal" style="--card-color: var(--solar);">
+          <div class="chapter-card__num">Chapter 01</div>
+          <div class="chapter-card__icon">🌌</div>
+          <h3 class="chapter-card__title">The Solar System</h3>
+          <p class="chapter-card__desc">Blast off into space! Learn about the Sun, 8 planets, moons, and the wonders of our cosmic neighbourhood.</p>
+          <span class="chapter-card__link">Explore →</span>
+        </a>
+
+        <!-- Chapter 2: Plants -->
+        <a href="chapters/plants.html" class="chapter-card reveal" style="--card-color: var(--plants);">
+          <div class="chapter-card__num">Chapter 02</div>
+          <div class="chapter-card__icon">🌿</div>
+          <h3 class="chapter-card__title">Amazing Plants</h3>
+          <p class="chapter-card__desc">Discover how plants make food from sunlight, grow from seeds, and why they are so important for life on Earth.</p>
+          <span class="chapter-card__link">Explore →</span>
+        </a>
+
+        <!-- Chapter 3: Animals -->
+        <a href="chapters/animals.html" class="chapter-card reveal" style="--card-color: var(--animals);">
+          <div class="chapter-card__num">Chapter 03</div>
+          <div class="chapter-card__icon">🦁</div>
+          <h3 class="chapter-card__title">Amazing Animals</h3>
+          <p class="chapter-card__desc">From speedy cheetahs to glowing fireflies — meet the wild world of animals and learn how they survive.</p>
+          <span class="chapter-card__link">Explore →</span>
+        </a>
+
+        <!-- Chapter 4: Five Senses -->
+        <a href="chapters/five-senses.html" class="chapter-card reveal" style="--card-color: var(--senses);">
+          <div class="chapter-card__num">Chapter 04</div>
+          <div class="chapter-card__icon">👁️</div>
+          <h3 class="chapter-card__title">The Five Senses</h3>
+          <p class="chapter-card__desc">Sight, hearing, smell, taste and touch — your senses are incredible tools! Let's explore how each one works.</p>
+          <span class="chapter-card__link">Explore →</span>
+        </a>
+
+        <!-- Chapter 5: Magnets -->
+        <a href="chapters/magnets.html" class="chapter-card reveal" style="--card-color: var(--magnets);">
+          <div class="chapter-card__num">Chapter 05</div>
+          <div class="chapter-card__icon">🧲</div>
+          <h3 class="chapter-card__title">Mighty Magnets</h3>
+          <p class="chapter-card__desc">Push, pull, attract and repel! Uncover the invisible forces of magnetism and how Earth itself is a giant magnet.</p>
+          <span class="chapter-card__link">Explore →</span>
+        </a>
+
+        <!-- Chapter 6: Weather -->
+        <a href="chapters/weather.html" class="chapter-card reveal" style="--card-color: var(--weather);">
+          <div class="chapter-card__num">Chapter 06</div>
+          <div class="chapter-card__icon">🌦️</div>
+          <h3 class="chapter-card__title">Wild Weather</h3>
+          <p class="chapter-card__desc">Rain, snow, sunshine and storms! Find out what causes weather, the water cycle, and how meteorologists predict it.</p>
+          <span class="chapter-card__link">Explore →</span>
+        </a>
+
+        <!-- Chapter 7: Simple Machines -->
+        <a href="chapters/simple-machines.html" class="chapter-card reveal" style="--card-color: var(--machines);">
+          <div class="chapter-card__num">Chapter 07</div>
+          <div class="chapter-card__icon">⚙️</div>
+          <h3 class="chapter-card__title">Simple Machines</h3>
+          <p class="chapter-card__desc">Levers, pulleys, ramps and wheels — simple machines make hard jobs easy. See how they're everywhere around you!</p>
+          <span class="chapter-card__link">Explore →</span>
+        </a>
+
+        <!-- Chapter 8: Our Body -->
+        <a href="chapters/our-body.html" class="chapter-card reveal" style="--card-color: var(--body);">
+          <div class="chapter-card__num">Chapter 08</div>
+          <div class="chapter-card__icon">🫀</div>
+          <h3 class="chapter-card__title">Our Amazing Body</h3>
+          <p class="chapter-card__desc">Your body is a super machine! Learn about bones, muscles, the brain, and all the systems working inside you.</p>
+          <span class="chapter-card__link">Explore →</span>
+        </a>
+
+        <!-- Chapter 9: Energy & Electricity -->
+        <a href="chapters/energy-electricity.html" class="chapter-card reveal" style="--card-color: var(--energy);">
+          <div class="chapter-card__num">Chapter 09</div>
+          <div class="chapter-card__icon">⚡</div>
+          <h3 class="chapter-card__title">Energy & Electricity</h3>
+          <p class="chapter-card__desc">What powers your lights, phone and car? Explore the amazing world of energy — solar, wind, electric and more.</p>
+          <span class="chapter-card__link">Explore →</span>
+        </a>
+
+        <!-- Chapter 10: Saving Our Planet -->
+        <a href="chapters/saving-our-planet.html" class="chapter-card reveal" style="--card-color: var(--planet);">
+          <div class="chapter-card__num">Chapter 10</div>
+          <div class="chapter-card__icon">🌍</div>
+          <h3 class="chapter-card__title">Saving Our Planet</h3>
+          <p class="chapter-card__desc">Our Earth needs our help! Discover how global warming, pollution and deforestation affect us — and what YOU can do.</p>
+          <span class="chapter-card__link">Explore →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       QUIZ CTA BANNER
+  ═══════════════════════════════════════════════════════ -->
+  <section style="background: var(--accent); padding: var(--space-xl) var(--space-lg); text-align: center; color: #fff;">
+    <div class="container">
+      <div style="font-size: 3rem; margin-bottom: var(--space-sm);">🎯</div>
+      <h2 style="font-family: 'Nunito',sans-serif; font-weight: 900; font-size: var(--text-3xl); color: #fff; margin-bottom: var(--space-sm);">
+        Ready to Test Your Knowledge?
+      </h2>
+      <p style="font-size: var(--text-lg); opacity: 0.9; margin-bottom: var(--space-lg);">
+        100 questions across all 10 chapters — with a countdown timer!
+      </p>
+      <a href="quiz.html" class="btn btn--white">🚀 Start the Quiz Now!</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer__logo">⭐ Science for Little Stars</div>
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="chapters/solar-system.html">Chapters</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+      <p>Made with ❤️ for curious little scientists everywhere.</p>
+      <p style="margin-top: 0.5rem; font-size: var(--text-xs);">© 2025 Science for Little Stars. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
