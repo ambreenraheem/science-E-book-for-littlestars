@@ -1,14 +1,27 @@
+<!--
+  Science for Little Stars - Chapter 05: Wild Weather
+  Interactive Science E-book for Kids (Ages 6–8)
+  https://ambreenraheem.github.io/science-for-little-stars/
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chapter 06: Wild Weather | Science for Little Stars</title>
+  <title>Chapter 05: Wild Weather | Science for Little Stars</title>
+  <meta name="description"
+    content="Learn about wild weather! Discover rain, clouds, rainbows, snow, thunder and more — fun science for kids ages 6 to 8." />
   <link rel="stylesheet" href="../css/style.css" />
   <style>
-    :root { --accent: #06b6d4; --accent-light: #ecfeff; }
+    :root {
+      --accent: #06b6d4;
+      --accent-light: #ecfeff;
+    }
   </style>
 </head>
+
 <body>
 
   <!-- NAV -->
@@ -17,15 +30,16 @@
       <a href="../index.html" class="nav__logo"><span>⭐</span> Science for Little Stars</a>
       <div class="nav__links">
         <a href="../index.html">Home</a>
-        <a href="#" class="active">Ch 06: Wild Weather</a>
-        <a href="simple-machines.html">Next Chapter →</a>
+        <a href="#" class="active">Ch 05: Wild Weather</a>
+        <a href="06_magnets.html">Next Chapter →</a>
         <a href="../quiz.html" class="nav__cta">🎯 Quiz!</a>
       </div>
-      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <button class="nav__hamburger" id="nav-hamburger"
+        aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile" id="nav-mobile">
       <a href="../index.html">🏠 Home</a>
-      <a href="simple-machines.html">Next: Simple Machines</a>
+      <a href="06_magnets.html">Next: Magnets</a>
       <a href="../quiz.html">🎯 Take the Quiz!</a>
     </div>
   </nav>
@@ -35,60 +49,165 @@
     <div class="container">
       <div class="chapter-hero__inner">
         <a href="../index.html" class="chapter-hero__back">← Back to all chapters</a>
-        <div class="chapter-hero__num">Chapter 06</div>
+        <div class="chapter-hero__num">Chapter 05</div>
         <h1 class="chapter-hero__title">Wild Weather 🌦️</h1>
-        <p class="chapter-hero__subtitle">Rain, thunder, snow and sunshine — weather affects every living thing on Earth. Let's explore the science behind it!</p>
+        <p class="chapter-hero__subtitle">Rain, sunshine, snow, and storms — weather is
+          happening all around us every single day! Let's find out what makes the
+          weather change and why it's so amazing. ☀️🌧️❄️</p>
       </div>
     </div>
   </header>
 
   <main class="container">
 
-    <!-- SECTION 1: Intro -->
+    <!-- ══════════════════════════════════════════════════
+         SECTION 1 — Introduction & Fun Cards
+    ══════════════════════════════════════════════════ -->
     <section class="section--sm">
       <div class="section-header">
         <div class="section-header__label">🌦️ Let's Discover</div>
         <h2 class="section-header__title">What is Weather?</h2>
-        <p class="section-header__desc">Weather describes what the atmosphere (the air around Earth) is doing right now — sunshine, rain, wind, clouds, snow or storms!</p>
+        <p class="section-header__desc">
+          Weather is what is happening outside <strong>right now</strong> — is it sunny?
+          Rainy? Windy? Snowy? ❄️ Weather changes every day and sometimes
+          even every hour!<br><br>
+          The <strong>Sun</strong> is the big boss of weather! It heats up the air,
+          the water, and the land — and that's what makes all the different kinds
+          of weather happen. Let's explore! 🌞
+        </p>
       </div>
+
       <div class="fun-cards">
-        
+
+        <!-- Card 1 — Clouds & Rain -->
         <div class="fun-card reveal">
           <span class="fun-card__icon">☁️</span>
-          <h3 class="fun-card__title">How Clouds Form</h3>
-          <p class="fun-card__text">Water from oceans, lakes and rivers evaporates (turns into water vapour) and rises into the sky. As it cools, it condenses into tiny droplets that form clouds. When droplets get heavy enough, they fall as rain or snow!</p>
+          <h3 class="fun-card__title">Clouds & Rain</h3>
+          <p class="fun-card__text">
+            Clouds are made of <strong>tiny water drops</strong> floating in the sky! ☁️
+            Here's how they form:<br><br>
+            ☀️ The Sun heats up water in rivers, lakes, and oceans.<br>
+            💨 The water turns into invisible gas and floats up into the sky.<br>
+            ☁️ High up where it's cold, the gas turns back into tiny water drops —
+            and that makes a <strong>cloud</strong>!<br>
+            🌧️ When the drops get too heavy, they fall down as <strong>rain</strong>!<br><br>
+            <strong>Fun fact:</strong> A big rain cloud can hold <strong>millions of litres
+              of water</strong>! That's heavier than 100 elephants! 🐘🐘🐘
+            Rain is very important for plants and animals. It helps them grow and stay alive.
+            Raindrops are not teardrops! They are tiny drops of water that have come together in the clouds.
+          </p>
         </div>
+
+        <!-- Card 2 — The Water Cycle -->
         <div class="fun-card reveal">
           <span class="fun-card__icon">🌊</span>
-          <h3 class="fun-card__title">The Water Cycle</h3>
-          <p class="fun-card__text">Water constantly moves between the sea, sky and land in a cycle: Evaporation → Condensation → Precipitation → Collection. This cycle has been going for 4 billion years — the water you drink was once dinosaur sweat!</p>
+          <h3 class="fun-card__title">The Water-Go-Round!</h3>
+          <p class="fun-card__text">
+            Water goes on a never-ending journey called the <strong>water cycle</strong>! 🔄<br><br>
+            1️⃣ The Sun <strong>heats water</strong> and it goes up into the sky as gas. ☀️⬆️<br>
+            2️⃣ Up in the sky it gets cold, and the gas turns into <strong>clouds</strong>. ☁️<br>
+            3️⃣ The clouds get heavy and the water falls back down as <strong>rain or snow</strong>. 🌧️❄️<br>
+            4️⃣ The water flows into rivers, lakes, and oceans — and it starts again! 🌊<br><br>
+            <strong>Fun fact:</strong> The water you drink today is the SAME water
+            that dinosaurs drank millions of years ago! 🦕💧
+            The water cycle is a natural process that helps to distribute water around the Earth.
+            It is a continuous process that takes place over a period of time.
+            So next time you see rain, remember that it's just water taking a trip! 💧
+          </p>
         </div>
+
+        <!-- Card 3 — Wind -->
         <div class="fun-card reveal">
           <span class="fun-card__icon">💨</span>
-          <h3 class="fun-card__title">Wind</h3>
-          <p class="fun-card__text">Wind is moving air. It is caused by differences in air pressure. Warm air rises (creating low pressure), and cool air rushes in to replace it. The greater the pressure difference, the stronger the wind!</p>
+          <h3 class="fun-card__title">What is Wind?</h3>
+          <p class="fun-card__text">
+            Wind is just <strong>air that is moving</strong>! 🌬️ But why does it move?<br><br>
+            ☀️ The Sun heats up some parts of the Earth more than others.<br>
+            ⬆️ <strong>Warm air</strong> is light, so it floats up.<br>
+            ➡️ <strong>Cool air</strong> rushes in to take its place — and that moving
+            air is what we call <strong>wind</strong>! 💨<br><br>
+            A gentle wind is called a <strong>breeze</strong> 🍃 — it feels nice on a
+            hot day! But a very strong wind is a <strong>storm</strong> ⛈️ — it can
+            blow trees and even knock things over!<br><br>
+            <strong>Fun fact:</strong> Wind can be so strong that it pushes huge
+            sailing ships across the ocean! ⛵
+            Wind is all around us, even when we can't see it. It can be gentle and
+            refreshing, or it can be strong and powerful.
+            Wind is used to generate electricity in wind turbines.
+            Wind can also be used to fly kites and balloons.
+          </p>
         </div>
+
+        <!-- Card 4 — Storms -->
         <div class="fun-card reveal">
-          <span class="fun-card__icon">🌪️</span>
-          <h3 class="fun-card__title">Extreme Weather</h3>
-          <p class="fun-card__text">Hurricanes are massive rotating storms that form over warm oceans. Tornadoes are powerful spinning columns of air. Blizzards are severe snowstorms. Lightning is a giant spark of electricity between clouds or cloud and ground!</p>
+          <span class="fun-card__icon">⛈️</span>
+          <h3 class="fun-card__title">Thunder & Lightning!</h3>
+          <p class="fun-card__text">
+            Storms can be loud and exciting! ⚡<br><br>
+            ⚡ <strong>Lightning</strong> is a giant spark of electricity in the sky!
+            It happens when clouds get so charged up that they zap a huge bolt
+            of light — FLASH! 💥<br>
+            🥁 <strong>Thunder</strong> is the loud BOOM sound that happens after
+            lightning. The lightning heats the air so fast it makes a big bang!<br>
+            👀 You see lightning FIRST and hear thunder AFTER — that's because
+            <strong>light is faster than sound</strong>! 🏃💨<br><br>
+            <strong>Fun fact:</strong> Lightning is <strong>5 times hotter</strong>
+            than the surface of the Sun! ☀️🔥 Stay safe indoors during storms!
+            Lightning is a natural phenomenon that occurs during thunderstorms. It is a
+            powerful discharge of electricity that can travel through the air and strike
+            the ground.
+          </p>
         </div>
+
+        <!-- Card 5 — Seasons -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🍂</span>
+          <h3 class="fun-card__title">The Four Seasons</h3>
+          <p class="fun-card__text">
+            The weather changes throughout the year because of the <strong>four
+              seasons</strong>! 🗓️<br><br>
+            🌸 <strong>Spring</strong> — flowers bloom, baby animals are born, and it's warm and rainy!<br>
+            ☀️ <strong>Summer</strong> — it's hot and sunny — time for ice cream and swimming! 🍦🏊<br>
+            🍂 <strong>Autumn</strong> — leaves change colour and fall from the trees!<br>
+            ❄️ <strong>Winter</strong> — it's cold and snowy — time for snowmen! ⛄<br><br>
+            <strong>Fun fact:</strong> When it's summer where you live, it's winter
+            on the other side of the world! 🌍
+            The four seasons are caused by the Earth's tilt on its axis as it revolves around the Sun.
+            These Seasons are important for the growth of plants and animals.
+            Each season has its own unique characteristics and beauty.
+            Different plants and animals are adapted to different seasons.
+            For example, some animals hibernate during the winter to conserve energy.
+            Others migrate to warmer climates.
+            Plants also adapt to the seasons by shedding their leaves in the fall and growing new ones in the spring.
+          </p>
+        </div>
+
       </div>
     </section>
 
-    <!-- THINK BUBBLE -->
+    <!-- ══════════════════════════════════════════════════
+         THINK BUBBLE
+    ══════════════════════════════════════════════════ -->
     <div class="think-bubble reveal">
       <span class="think-bubble__icon">💭</span>
       <div class="think-bubble__title">Think About It!</div>
-      <p class="think-bubble__text">The same water has been cycling around Earth for billions of years. The water in your glass today might have once been in a cloud over ancient Egypt, fallen as rain in a rainforest, or been drunk by a dinosaur! Water is never lost — it just changes form. 💧</p>
+      <p class="think-bubble__text">The water you drink today has been around for
+        <strong>billions of years</strong>! It's been in clouds, rivers, oceans, and
+        rain drops over and over again. The same water keeps going around and around
+        — it's never lost, it just keeps travelling! 💧🔄 Maybe a dinosaur once
+        drank the same water! 🦕😄
+      </p>
     </div>
 
-    <!-- SECTION 2: Explorer -->
+    <!-- ══════════════════════════════════════════════════
+         SECTION 2 — Weather Explorer (interactive slides)
+    ══════════════════════════════════════════════════ -->
     <section class="section--sm">
       <div class="section-header">
         <div class="section-header__label">🌦️ Weather Explorer</div>
-        <h2 class="section-header__title">Explore Weather Phenomena</h2>
+        <h2 class="section-header__title">Explore Amazing Weather!</h2>
       </div>
+
       <div class="explorer reveal">
         <div class="explorer__header">
           <h3 class="explorer__title">Click ← → to explore</h3>
@@ -97,93 +216,183 @@
             <button class="explorer__btn next-btn" aria-label="Next">→</button>
           </div>
         </div>
-        
+
+        <!-- Slide 1 — Temperature -->
         <div class="explorer__slide active">
           <div class="explorer__slide-icon">🌡️</div>
-          <h3 class="explorer__slide-title">Temperature</h3>
-          <p class="explorer__slide-text">Temperature tells us how hot or cold the air is. The thermometer measures it in degrees Celsius (°C) or Fahrenheit (°F). The hottest temperature ever recorded on Earth was 56.7°C in Death Valley, USA. The coldest was -89.2°C in Antarctica!</p>
+          <h3 class="explorer__slide-title">Hot or Cold?</h3>
+          <p class="explorer__slide-text">
+            We use a <strong>thermometer</strong> 🌡️ to find out how hot or cold it is
+            outside. When the number is high, it's hot — time for shorts and a t-shirt! 🩳
+            When the number is low, it's cold — put on your coat and gloves! 🧤
+            The hottest place on Earth is so hot you could fry an egg on the ground! 🍳
+            The coldest place is so cold that even your breath freezes instantly! 🥶
+            Temperature is a measure of how hot or cold something is.
+            It is measured in degrees Celsius or Fahrenheit.
+            A thermometer is used to measure temperature.
+            The higher the temperature, the hotter it is.
+            The lower the temperature, the colder it is.
+          </p>
         </div>
+
+        <!-- Slide 2 — Types of Clouds -->
         <div class="explorer__slide">
           <div class="explorer__slide-icon">☁️</div>
-          <h3 class="explorer__slide-title">Types of Clouds</h3>
-          <p class="explorer__slide-text">Cumulus clouds are fluffy like cotton balls — usually means fair weather. Cumulonimbus are giant storm clouds that bring thunder and lightning. Stratus clouds are flat grey sheets that bring drizzle. Cirrus clouds are thin and wispy, high up in the sky.</p>
+          <h3 class="explorer__slide-title">Cloud Shapes</h3>
+          <p class="explorer__slide-text">
+            Did you know clouds have different shapes, and each shape tells you
+            something about the weather? ☁️🔍<br>
+            🐑 <strong>Fluffy clouds</strong> look like cotton balls or sheep — they
+            mean it's a nice day!<br>
+            🌧️ <strong>Big dark clouds</strong> are full of water — rain is coming!<br>
+            📏 <strong>Flat grey clouds</strong> cover the whole sky — it might drizzle.<br>
+            🪶 <strong>Thin wispy clouds</strong> are very high up and look like feathers!
+            Clouds are made of tiny water droplets or ice crystals that are suspended in the atmosphere.
+            They form when water vapor in the air cools and condenses around tiny particles such as dust or salt.
+            Clouds play an important role in the Earth's climate system by reflecting sunlight back into space and
+            trapping heat near the surface.
+            Different types of clouds have different shapes and sizes, and they can be used to predict the weather.
+          </p>
         </div>
+
+        <!-- Slide 3 — Rainbows -->
         <div class="explorer__slide">
           <div class="explorer__slide-icon">🌈</div>
-          <h3 class="explorer__slide-title">Rainbow Science</h3>
-          <p class="explorer__slide-text">A rainbow appears when sunlight passes through water droplets in the air. The droplets act like tiny prisms, splitting white light into its 7 colours: Red, Orange, Yellow, Green, Blue, Indigo, Violet. You always see a rainbow opposite the Sun!</p>
+          <h3 class="explorer__slide-title">Rainbow Magic!</h3>
+          <p class="explorer__slide-text">
+            A <strong>rainbow</strong> appears when the Sun shines through raindrops! 🌈☀️
+            The raindrops act like tiny mirrors and split the sunlight into
+            <strong>7 beautiful colours</strong>:<br>
+            🔴 Red · 🟠 Orange · 🟡 Yellow · 🟢 Green · 🔵 Blue · 🟣 Indigo · 💜 Violet<br><br>
+            To see a rainbow, the Sun must be <strong>behind you</strong> and the rain
+            must be <strong>in front of you</strong>. Next time it rains while the Sun
+            is shining, look for one! 👀✨
+            Rainbows are optical phenomena that are caused by the reflection, refraction, and dispersion of light in
+            water droplets.
+            They are most commonly seen during or after rainfall when the sun is shining.
+            Rainbows can also be seen in waterfalls, mist, and spray.
+            The colors of the rainbow are always in the same order: red, orange, yellow, green, blue, indigo, and
+            violet.
+            This is because each color has a different wavelength, and the different wavelengths are bent at different
+            angles when they pass through the water droplets.
+          </p>
         </div>
-        <div class="explorer__slide">
-          <div class="explorer__slide-icon">⛈️</div>
-          <h3 class="explorer__slide-title">Lightning & Thunder</h3>
-          <p class="explorer__slide-text">Lightning is a giant electrical discharge — a spark! It happens when electric charges build up in storm clouds. Lightning heats the air to 30,000°C (5 times hotter than the Sun's surface!), causing it to rapidly expand — that bang is thunder. Light travels faster than sound, so you see lightning before hearing thunder.</p>
-        </div>
+
+        <!-- Slide 4 — Snow & Ice -->
         <div class="explorer__slide">
           <div class="explorer__slide-icon">❄️</div>
           <h3 class="explorer__slide-title">Snow & Ice</h3>
-          <p class="explorer__slide-text">Snow forms when water vapour in clouds freezes directly into ice crystals. Every snowflake has a unique six-sided shape — no two are exactly alike! Hail forms when raindrops are carried up by strong winds, freeze, gather layers of ice, and fall as lumps.</p>
+          <p class="explorer__slide-text">
+            When it's very cold high up in the clouds, water doesn't turn into rain —
+            it turns into <strong>snow</strong>! ❄️ Snow is made of tiny
+            <strong>ice crystals</strong> that are so delicate and beautiful.
+            Every single snowflake has <strong>6 sides</strong>, and no two snowflakes
+            are exactly the same! 🔬✨ When LOTS of snow falls at once with strong
+            wind, it's called a <strong>blizzard</strong> — brrr! 🥶🌨️
+            Snowflakes are formed when water vapor in the atmosphere freezes into ice crystals.
+            These crystals then fall to the ground as snow.
+            Snowflakes can be different shapes and sizes, but they all have 6 sides.
+            Snowflakes are made of water, but they are not wet.
+            This is because the ice crystals are so small that they do not melt when they touch your skin.
+          </p>
         </div>
+
+        <!-- Slide 5 — Tornadoes & Hurricanes -->
+        <div class="explorer__slide">
+          <div class="explorer__slide-icon">🌪️</div>
+          <h3 class="explorer__slide-title">Super Storms!</h3>
+          <p class="explorer__slide-text">
+            Sometimes weather gets REALLY wild! 🌪️<br>
+            🌪️ A <strong>tornado</strong> is a spinning funnel of wind that touches the
+            ground — it can spin faster than a race car! 🏎️💨<br>
+            🌀 A <strong>hurricane</strong> is a HUGE spinning storm that forms over
+            warm ocean water. It can be as wide as a whole country! 😮<br><br>
+            Scientists called <strong>weather forecasters</strong> watch the sky and
+            use special tools to warn people when big storms are coming — so everyone
+            can stay safe! 🛡️📡
+            Tornadoes and hurricanes are both types of severe storms that can cause a lot of damage.
+            Tornadoes are rotating columns of air that extend from a thunderstorm to the ground.
+            Hurricanes are large, rotating storms that form over warm ocean water.
+            Both tornadoes and hurricanes can cause high winds, heavy rain, and flooding.
+            It is important to stay safe during these storms by following the instructions of emergency officials.
+          </p>
+        </div>
+
         <div class="explorer__dots">
-          <button class="explorer__dot active" aria-label="Temperature"></button>
-          <button class="explorer__dot" aria-label="Types of Clouds"></button>
-          <button class="explorer__dot" aria-label="Rainbow Science"></button>
-          <button class="explorer__dot" aria-label="Lightning & Thunder"></button>
+          <button class="explorer__dot active" aria-label="Hot or Cold?"></button>
+          <button class="explorer__dot" aria-label="Cloud Shapes"></button>
+          <button class="explorer__dot" aria-label="Rainbow Magic!"></button>
           <button class="explorer__dot" aria-label="Snow & Ice"></button>
-          
+          <button class="explorer__dot" aria-label="Super Storms!"></button>
         </div>
       </div>
     </section>
 
-    <!-- SECRET REVEAL -->
+    <!-- ══════════════════════════════════════════════════
+         SECRET REVEAL BOX
+    ══════════════════════════════════════════════════ -->
     <div class="secret-box reveal">
       <button class="secret-btn" aria-expanded="false">
         <span>🔒</span>
         <span class="secret-btn__label">Reveal the Secret!</span>
-        <span style="margin-left:auto; opacity:0.6; font-weight:400;">Click to unlock a mind-blowing fact →</span>
+        <span style="margin-left:auto; opacity:0.6; font-weight:400;">Click to unlock a super cool fact →</span>
       </button>
       <div class="secret-content">
-        <strong>🤯 WOW!</strong> A single hurricane can release <strong>200 times more energy</strong> per day than the entire world's electrical generating capacity! And lightning strikes Earth about <strong>100 times every second</strong> — that's 8 million lightning bolts per day worldwide!
+        <strong>🤯 WOW!</strong> Lightning strikes the Earth about <strong>100 times
+          every single second</strong>! ⚡ That's about <strong>8 million lightning
+          bolts every day</strong>! And each bolt is hotter than the surface of the
+        Sun! Good thing most lightning happens high up in the clouds where it
+        can't hurt us. Stay inside during storms to be safe! 🏠⛈️
       </div>
     </div>
 
-    <!-- SECTION 3: Summary -->
+    <!-- ══════════════════════════════════════════════════
+         SECTION 3 — Quick Summary
+    ══════════════════════════════════════════════════ -->
     <section class="section--sm">
       <div class="section-header">
         <div class="section-header__label">📋 Quick Recap</div>
         <h2 class="section-header__title">What Did We Learn?</h2>
       </div>
+
       <div class="summary-grid">
-        
+
         <div class="summary-card reveal">
           <div class="summary-card__icon">☁️</div>
           <h4 class="summary-card__title">Clouds</h4>
-          <p class="summary-card__text">Form when water vapour cools and condenses</p>
+          <p class="summary-card__text">Tiny water drops floating in the sky make clouds!</p>
         </div>
+
         <div class="summary-card reveal">
-          <div class="summary-card__icon">🌊</div>
+          <div class="summary-card__icon">🔄</div>
           <h4 class="summary-card__title">Water Cycle</h4>
-          <p class="summary-card__text">Evaporation → Condensation → Precipitation</p>
+          <p class="summary-card__text">Water goes up, makes clouds, falls as rain — again and again!</p>
         </div>
+
         <div class="summary-card reveal">
           <div class="summary-card__icon">💨</div>
           <h4 class="summary-card__title">Wind</h4>
-          <p class="summary-card__text">Caused by differences in air pressure</p>
+          <p class="summary-card__text">Wind is air that moves when the Sun heats things up!</p>
         </div>
-        <div class="summary-card reveal">
-          <div class="summary-card__icon">🌡️</div>
-          <h4 class="summary-card__title">Temperature</h4>
-          <p class="summary-card__text">Measured with a thermometer</p>
-        </div>
+
         <div class="summary-card reveal">
           <div class="summary-card__icon">🌈</div>
           <h4 class="summary-card__title">Rainbows</h4>
-          <p class="summary-card__text">Sunlight split into 7 colours by water</p>
+          <p class="summary-card__text">Sunlight through rain makes 7 beautiful colours!</p>
         </div>
+
         <div class="summary-card reveal">
-          <div class="summary-card__icon">⛈️</div>
-          <h4 class="summary-card__title">Storms</h4>
-          <p class="summary-card__text">Hurricanes, tornadoes and thunderstorms</p>
+          <div class="summary-card__icon">❄️</div>
+          <h4 class="summary-card__title">Snow</h4>
+          <p class="summary-card__text">Every snowflake has 6 sides — and no two are the same!</p>
         </div>
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">⚡</div>
+          <h4 class="summary-card__title">Storms</h4>
+          <p class="summary-card__text">Lightning is a giant spark — 5 times hotter than the Sun!</p>
+        </div>
+
       </div>
     </section>
 
@@ -191,9 +400,9 @@
 
   <!-- CHAPTER NAV -->
   <div class="chapter-nav">
-    <a href="magnets.html" class="chapter-nav__btn">← Chapter 05: Magnets</a>
+    <a href="04_animals.html" class="chapter-nav__btn">← Chapter 04: Animals</a>
     <a href="../quiz.html" class="chapter-nav__quiz">🎯 Test Your Knowledge!</a>
-    <a href="simple-machines.html" class="chapter-nav__btn">Chapter 7: Simple Machines →</a>
+    <a href="06_magnets.html" class="chapter-nav__btn">Chapter 06: Magnets →</a>
   </div>
 
   <footer>
@@ -202,12 +411,13 @@
       <div class="footer__links">
         <a href="../index.html">Home</a>
         <a href="../quiz.html">Quiz</a>
-        <a href="simple-machines.html">Next Chapter</a>
+        <a href="06_magnets.html">Next Chapter</a>
       </div>
-      <p>Made with ❤️ for curious little scientists everywhere.</p>
+      <p>Authored by Ambreen Abdul Raheem. The Data Analyst And Web Developer. Copyright © 2026.</p>
     </div>
   </footer>
 
   <script src="../js/main.js"></script>
 </body>
+
 </html>

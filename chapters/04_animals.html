@@ -1,18 +1,19 @@
-<!-- 
-  Science for Little Stars - Chapter 03: Amazing Animals
-  Interactive Science E-book for Kids (Grades 1-3)
-  https://ambreenraheem.github.io/science-for-little-stars/chapters/animals.html
+<!--
+  Science for Little Stars - Chapter 04: Amazing Animals
+  Interactive Science E-book for Kids (Ages 6–8)
+  https://ambreenraheem.github.io/science-for-little-stars/
 -->
 
-<!DOCTYPE html> <!-- This is a starting tag of the html document -->
-<html lang="en"> <!-- This is a language attribute -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" /> <!-- This is a character encoding of the html document -->
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- This is a viewport meta tag of the html document -->
-  <title>Chapter 03: Amazing Animals | Science for Little Stars</title> <!-- This is a title of the html document -->
-  <link rel="stylesheet" href="../css/style.css" /> <!-- This is a stylesheet of the html document -->
+  <title>Chapter 04: Amazing Animals | Science for Little Stars</title>
+  <meta name="description"
+    content="Learn about amazing animals! Discover mammals, birds, fish, reptiles, insects and more — fun science for kids ages 6 to 8." />
+  <link rel="stylesheet" href="../css/style.css" />
   <style>
     :root {
       --accent: #f59e0b;
@@ -23,24 +24,23 @@
 
 <body>
 
-  <!-- NAV --> <!-- This is a navigation section of the html document -->
-  <nav class="nav"> <!-- This is a navigation section of the html document -->
-    <div class="nav__inner"> <!-- This is a inner section of the html document -->
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
       <a href="../index.html" class="nav__logo"><span>⭐</span> Science for Little Stars</a>
-      <!-- This is a logo section of the html document -->
-      <div class="nav__links"> <!-- This is a desktop links section of the html document -->
-        <a href="../index.html">Home</a> <!-- This is a home link of the html document -->
-        <a href="#" class="active">Ch 03: Amazing Animals</a> <!-- This is a active link of the html document -->
-        <a href="five-senses.html">Next Chapter →</a> <!-- This is a next chapter link of the html document -->
-        <a href="../quiz.html" class="nav__cta">🎯 Quiz!</a> <!-- This is a quiz button of the html document -->
+      <div class="nav__links">
+        <a href="../index.html">Home</a>
+        <a href="#" class="active">Ch 04: Amazing Animals</a>
+        <a href="05_weather.html">Next Chapter →</a>
+        <a href="../quiz.html" class="nav__cta">🎯 Quiz!</a>
       </div>
       <button class="nav__hamburger" id="nav-hamburger"
         aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
-    <div class="nav__mobile" id="nav-mobile"> <!-- This is a mobile menu section of the html document -->
-      <a href="../index.html">🏠 Home</a> <!-- This is a home link of the html document -->
-      <a href="five-senses.html">Next: Five Senses</a> <!-- This is a next chapter link of the html document -->
-      <a href="../quiz.html">🎯 Take the Quiz!</a> <!-- This is a quiz button of the html document -->
+    <div class="nav__mobile" id="nav-mobile">
+      <a href="../index.html">🏠 Home</a>
+      <a href="05_weather.html">Next: Weather</a>
+      <a href="../quiz.html">🎯 Take the Quiz!</a>
     </div>
   </nav>
 
@@ -49,235 +49,336 @@
     <div class="container">
       <div class="chapter-hero__inner">
         <a href="../index.html" class="chapter-hero__back">← Back to all chapters</a>
-        <!-- This is a back button of the html document -->
-        <div class="chapter-hero__num">Chapter 03</div> <!-- This is a chapter number of the html document -->
-        <h1 class="chapter-hero__title">Amazing Animals 🦁</h1> <!-- This is a chapter title of the html document -->
-        <p class="chapter-hero__subtitle">From the deepest oceans to the highest mountains — the animal kingdom is full
-          of incredible creatures!</p> <!-- This is a chapter subtitle of the html document -->
+        <div class="chapter-hero__num">Chapter 04</div>
+        <h1 class="chapter-hero__title">Amazing Animals 🦁</h1>
+        <p class="chapter-hero__subtitle">Animals live everywhere — in jungles, oceans,
+          deserts, and maybe even in your backyard! Let's meet some amazing
+          animal groups and learn what makes each one special. 🐾</p>
       </div>
     </div>
   </header>
 
-  <main class="container"> <!-- This is a main section of the html document -->
+  <main class="container">
 
-    <!-- SECTION 1: Intro -->
-    <section class="section--sm"> <!-- This is a section of the html document -->
-      <div class="section-header"> <!-- This is a section header of the html document -->
-        <div class="section-header__label">🦁 Let's Discover</div> <!-- This is a section label of the html document -->
-        <h2 class="section-header__title">The Animal Kingdom</h2> <!-- This is a section title of the html document -->
-        <p class="section-header__desc">Animals are living things that can move, eat and breathe. There are millions of
-          species on Earth — each with amazing adaptations for survival!</p>
-        <!-- This is a section description of the html document -->
+    <!-- ══════════════════════════════════════════════════
+         SECTION 1 — Introduction & Fun Cards
+    ══════════════════════════════════════════════════ -->
+    <section class="section--sm">
+      <div class="section-header">
+        <div class="section-header__label">🦁 Let's Discover</div>
+        <h2 class="section-header__title">The Animal Kingdom</h2>
+        <p class="section-header__desc">
+          There are <strong>millions</strong> of different kinds of animals on Earth! 🌍
+          Some are big like elephants 🐘, and some are tiny like ants 🐜.
+          Some live in the sea, some fly in the sky, and some live on land.<br><br>
+          Scientists put animals into groups based on what they look like
+          and how they live. Let's explore the most amazing groups! 🔍
+        </p>
       </div>
-      <div class="fun-cards"> <!-- This is a fun cards section of the html document -->
 
-        <div class="fun-card reveal"> <!-- This is a fun card section of the html document -->
-          <span class="fun-card__icon">🦁</span> <!-- This is a fun card icon of the html document -->
-          <h3 class="fun-card__title">Mammals</h3> <!-- This is a fun card title of the html document -->
-          <p class="fun-card__text">Mammals are warm-blooded animals that feed their babies milk. They have hair or fur.
-            Humans, dogs, elephants, dolphins and bats are all mammals. Most give birth to live young.</p>
-          <!-- This is a fun card text of the html document -->
+      <div class="fun-cards">
+
+        <!-- Card 1 — Mammals -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🦁</span>
+          <h3 class="fun-card__title">Mammals</h3>
+          <p class="fun-card__text">
+            <strong>Mammals</strong> are animals that have fur or hair and feed their
+            babies milk — just like your mum fed you when you were a baby! 🍼<br><br>
+            🐶 Dogs, cats, and horses are mammals!<br>
+            🐬 Even dolphins and whales are mammals — they breathe air, not water!<br>
+            🦇 Bats are mammals too — the only ones that can fly!<br><br>
+            <strong>Fun fact:</strong> YOU are a mammal! You have hair, you're warm,
+            and you were fed milk as a baby. 😄
+            Mammals are warm-blooded vertebrates characterized by the presence of mammary
+            glands, which in females produce milk for nourishing the young.
+          </p>
         </div>
-        <div class="fun-card reveal"> <!-- This is a fun card section of the html document -->
-          <span class="fun-card__icon">🐦</span> <!-- This is a fun card icon of the html document -->
-          <h3 class="fun-card__title">Birds</h3> <!-- This is a fun card title of the html document -->
-          <p class="fun-card__text">Birds have feathers and wings (though not all can fly!). They are warm-blooded and
-            lay eggs. Penguins cannot fly but are expert swimmers. Eagles can see 8 times better than humans!</p>
-          <!-- This is a fun card text of the html document -->
+
+        <!-- Card 2 — Birds -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🐦</span>
+          <h3 class="fun-card__title">Birds</h3>
+          <p class="fun-card__text">
+            <strong>Birds</strong> have feathers and wings, and most of them can fly! 🕊️
+            They lay eggs and keep them warm until the babies hatch. 🥚<br><br>
+            🦅 Eagles can see super far — much better than humans!<br>
+            🐧 Penguins are birds that can't fly — but they're amazing swimmers! 🏊<br>
+            🦜 Parrots can learn to copy what you say! "Hello!" 👋<br><br>
+            <strong>Fun fact:</strong> The hummingbird is the <strong>smallest bird</strong>
+            in the world — it's tinier than your hand! 🤏
+            Birds are warm-blooded vertebrates characterized by the presence of feathers,
+            wings, and a beak, and most are capable of flight.
+          </p>
         </div>
-        <div class="fun-card reveal"> <!-- This is a fun card section of the html document -->
-          <span class="fun-card__icon">🐟</span> <!-- This is a fun card icon of the html document -->
-          <h3 class="fun-card__title">Fish</h3> <!-- This is a fun card title of the html document -->
-          <p class="fun-card__text">Fish live in water and breathe through gills. They are cold-blooded — their body
-            temperature matches their surroundings. Fish have scales and use fins to swim.</p>
-          <!-- This is a fun card text of the html document -->
+
+        <!-- Card 3 — Fish -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🐟</span>
+          <h3 class="fun-card__title">Fish</h3>
+          <p class="fun-card__text">
+            <strong>Fish</strong> live in water — in rivers, lakes, and oceans! 🌊
+            They breathe using special parts called <strong>gills</strong> (not lungs
+            like us!). They have fins to swim and scales to protect their bodies.<br><br>
+            🐡 Pufferfish can blow up like a balloon when they're scared!<br>
+            🦈 Sharks have been around longer than dinosaurs!<br>
+            🐠 Clownfish live inside sea plants called anemones — like Nemo! 🎬<br><br>
+            <strong>Fun fact:</strong> Some fish can glow in the dark deep
+            down in the ocean! 💡🐟
+            Fish are aquatic vertebrates that have gills for breathing, fins for movement,
+            and scales for protection.
+          </p>
         </div>
-        <div class="fun-card reveal"> <!-- This is a fun card section of the html document -->
-          <span class="fun-card__icon">🦎</span> <!-- This is a fun card icon of the html document -->
-          <h3 class="fun-card__title">Reptiles & Amphibians</h3> <!-- This is a fun card title of the html document -->
-          <p class="fun-card__text">Reptiles (like snakes and lizards) have dry scaly skin. Amphibians (like frogs) can
-            live both in water and on land. Frogs start life as tadpoles in water and later grow legs!</p>
-          <!-- This is a fun card text of the html document -->
+
+        <!-- Card 4 — Reptiles & Amphibians -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🦎</span>
+          <h3 class="fun-card__title">Reptiles & Amphibians</h3>
+          <p class="fun-card__text">
+            <strong>Reptiles</strong> have dry, scaly skin — like lizards 🦎, snakes 🐍,
+            turtles 🐢, and crocodiles 🐊! They lay eggs and love to warm up in the sun. ☀️<br><br>
+            <strong>Amphibians</strong> like frogs 🐸 and salamanders can live in water
+            AND on land! Frogs start life as tiny <strong>tadpoles</strong> swimming in
+            ponds, and then they grow legs and hop onto land! 🐸➡️🦵<br><br>
+            <strong>Fun fact:</strong> Chameleons can change their skin colour
+            to match what's around them — like a magic trick! 🎨✨
+            Reptiles are cold-blooded vertebrates characterized by the presence of scales,
+            and most lay eggs on land. Amphibians are cold-blooded vertebrates that can
+            live both in water and on land, and they typically undergo metamorphosis from
+            an aquatic larval stage to a terrestrial adult stage.
+          </p>
+        </div>
+
+        <!-- Card 5 — Insects -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🐛</span>
+          <h3 class="fun-card__title">Insects & Bugs</h3>
+          <p class="fun-card__text">
+            <strong>Insects</strong> are the biggest group of animals on Earth! They all
+            have <strong>6 legs</strong> and many have wings. 🪰<br><br>
+            🐝 Bees make honey and help flowers grow!<br>
+            🦋 Butterflies start as caterpillars and then grow beautiful wings!<br>
+            🐜 Ants work in big teams — they can carry things much heavier than themselves!<br>
+            🐞 Ladybirds are tiny but they help farmers by eating plant pests!<br><br>
+            <strong>Fun fact:</strong> There are more insects on Earth than any
+            other kind of animal! 🌍🐜🐜🐜
+            Insects are invertebrates characterized by the presence of six legs, a three-part
+            body (head, thorax, and abdomen), and usually one or two pairs of wings.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         THINK BUBBLE
+    ══════════════════════════════════════════════════ -->
+    <div class="think-bubble reveal">
+      <span class="think-bubble__icon">💭</span>
+      <div class="think-bubble__title">Think About It!</div>
+      <p class="think-bubble__text">Did you know that for every ONE person on Earth, there
+        are about <strong>1 billion insects</strong>? 🐜 Insects may be tiny, but they do
+        HUGE jobs — bees help flowers grow, worms make the soil healthy, and ladybirds
+        protect plants. Tiny but mighty! 💪</p>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 2 — Animal Kingdom Explorer (interactive slides)
+    ══════════════════════════════════════════════════ -->
+    <section class="section--sm">
+      <div class="section-header">
+        <div class="section-header__label">🦁 Animal Kingdom Explorer</div>
+        <h2 class="section-header__title">What Do Animals Eat?</h2>
+      </div>
+
+      <div class="explorer reveal">
+        <div class="explorer__header">
+          <h3 class="explorer__title">Click ← → to explore</h3>
+          <div class="explorer__controls">
+            <button class="explorer__btn prev-btn" aria-label="Previous">←</button>
+            <button class="explorer__btn next-btn" aria-label="Next">→</button>
+          </div>
+        </div>
+
+        <!-- Slide 1 — Meat Eaters -->
+        <div class="explorer__slide active">
+          <div class="explorer__slide-icon">🦁</div>
+          <h3 class="explorer__slide-title">Meat Eaters (Carnivores)</h3>
+          <p class="explorer__slide-text">
+            Some animals only eat <strong>meat</strong> — they are called
+            <strong>carnivores</strong> (say it: KAR-nih-vors). 🥩 Lions, sharks,
+            eagles, and wolves are all carnivores! They have <strong>sharp teeth</strong>
+            and <strong>strong claws</strong> to help them catch their food. Lions are
+            called the "King of the Jungle" because they are such powerful hunters! 👑🦁
+            Carnivores are animals that eat only meat. Some examples of
+            carnivores are lions, tigers, sharks, and eagles.
+          </p>
+        </div>
+
+        <!-- Slide 2 — Plant Eaters -->
+        <div class="explorer__slide">
+          <div class="explorer__slide-icon">🐘</div>
+          <h3 class="explorer__slide-title">Plant Eaters (Herbivores)</h3>
+          <p class="explorer__slide-text">
+            Some animals only eat <strong>plants</strong> — they are called
+            <strong>herbivores</strong> (say it: HER-bih-vors). 🌿 Elephants, cows,
+            rabbits, and horses all eat plants! They have <strong>flat teeth</strong>
+            to chew and grind leaves and grass. An elephant eats so many plants that
+            it spends about <strong>16 hours a day</strong> just eating! 🐘🍃 That's
+            almost all day long!
+            Herbivores are animals that eat only plants. Some examples of
+            herbivores are elephants, cows, rabbits, and horses.
+          </p>
+        </div>
+
+        <!-- Slide 3 — Both Eaters -->
+        <div class="explorer__slide">
+          <div class="explorer__slide-icon">🐻</div>
+          <h3 class="explorer__slide-title">Both! (Omnivores)</h3>
+          <p class="explorer__slide-text">
+            Some animals eat <strong>both</strong> plants AND meat — they are called
+            <strong>omnivores</strong> (say it: OM-nih-vors). 🍎🥩 Bears love to eat
+            berries AND fish! Pigs eat almost anything — fruits, vegetables, and
+            insects! 🐷 And guess what? <strong>Humans are omnivores too</strong>!
+            That's why you can eat a yummy salad AND a tasty chicken nugget. 😋🥗🍗
+            Omnivores are animals that eat both plants and meat. Some examples of
+            omnivores are bears, pigs, and humans.
+          </p>
+        </div>
+
+        <!-- Slide 4 — Amazing Changes -->
+        <div class="explorer__slide">
+          <div class="explorer__slide-icon">🦋</div>
+          <h3 class="explorer__slide-title">Amazing Changes!</h3>
+          <p class="explorer__slide-text">
+            Some animals completely <strong>change their shape</strong> as they grow up! 🤯
+            A fuzzy <strong>caterpillar</strong> 🐛 wraps itself in a little sleeping bag
+            and comes out as a beautiful <strong>butterfly</strong>! 🦋 This amazing
+            change takes about 2 weeks! A tiny <strong>tadpole</strong> swimming in a pond
+            slowly grows legs and turns into a <strong>frog</strong>! 🐸 Nature is full
+            of surprises!
+            Metamorphosis is a biological process by which an animal physically develops
+            after birth or hatching, involving a conspicuous and relatively abrupt change
+            in the animal's body structure through cell growth and differentiation.
+          </p>
+        </div>
+
+        <!-- Slide 5 — Winter Survival -->
+        <div class="explorer__slide">
+          <div class="explorer__slide-icon">🐻‍❄️</div>
+          <h3 class="explorer__slide-title">What Animals Do in Winter</h3>
+          <p class="explorer__slide-text">
+            When it gets really cold in winter, animals have clever ways to survive! ❄️
+            Some animals take a very <strong>long sleep</strong> called
+            <strong>hibernation</strong> — like bears 🐻 and hedgehogs 🦔. They sleep
+            for months and use energy stored in their bodies! Other animals
+            <strong>fly to warmer places</strong> — this is called <strong>migration</strong>.
+            Birds 🐦 fly thousands of kilometres to find sunshine and food! ☀️
+            Hibernation is a state of inactivity and metabolic depression in endotherms.
+            It is a survival strategy used by many animals to conserve energy during
+            periods of cold temperatures and limited food availability.
+            Migration is the seasonal movement of animals from one region to another.
+            It is a survival strategy used by many animals to find food, water, and
+            shelter.
+          </p>
+        </div>
+
+        <div class="explorer__dots">
+          <button class="explorer__dot active" aria-label="Meat Eaters"></button>
+          <button class="explorer__dot" aria-label="Plant Eaters"></button>
+          <button class="explorer__dot" aria-label="Both"></button>
+          <button class="explorer__dot" aria-label="Amazing Changes"></button>
+          <button class="explorer__dot" aria-label="Winter Survival"></button>
         </div>
       </div>
     </section>
 
-    <!-- THINK BUBBLE -->
-    <div class="think-bubble reveal"> <!-- This is a think bubble section of the html document -->
-      <span class="think-bubble__icon">💭</span> <!-- This is a think bubble icon of the html document -->
-      <div class="think-bubble__title">Think About It!</div> <!-- This is a think bubble title of the html document -->
-      <p class="think-bubble__text">Insects are the most numerous animals on Earth! For every 1 person, there are about
-        1.4 billion insects. They may be tiny, but insects pollinate our crops, decompose waste, and form the base of
-        many food chains. 🐛</p> <!-- This is a think bubble text of the html document -->
-    </div>
-
-    <!-- SECTION 2: Explorer -->
-    <section class="section--sm"> <!-- This is a section of the html document -->
-      <div class="section-header"> <!-- This is a section header of the html document -->
-        <div class="section-header__label">🦁 Animal Kingdom Explorer</div>
-        <!-- This is a section label of the html document -->
-        <h2 class="section-header__title">Explore Animal Groups</h2>
-        <!-- This is a section title of the html document -->
-      </div>
-      <div class="explorer reveal"> <!-- This is a explorer section of the html document -->
-        <div class="explorer__header"> <!-- This is a explorer header section of the html document -->
-          <h3 class="explorer__title">Click ← → to explore</h3>
-          <!-- This is a explorer title section of the html document -->
-          <div class="explorer__controls"> <!-- This is a explorer controls section of the html document -->
-            <button class="explorer__btn prev-btn" aria-label="Previous">←</button>
-            <!-- This is a explorer button section of the html document -->
-            <button class="explorer__btn next-btn" aria-label="Next">→</button>
-            <!-- This is a explorer button section of the html document -->
-          </div>
-        </div>
-
-        <div class="explorer__slide active"> <!-- This is a explorer slide section of the html document -->
-          <div class="explorer__slide-icon">🦁</div> <!-- This is a explorer slide icon section of the html document -->
-          <h3 class="explorer__slide-title">Carnivores</h3>
-          <!-- This is a explorer slide title section of the html document -->
-          <p class="explorer__slide-text">Carnivores eat only meat. They have sharp teeth and claws for hunting. Lions,
-            eagles, sharks and wolves are carnivores. Their bodies are built for speed, stealth, and catching prey.</p>
-          <!-- This is a explorer slide text section of the html document -->
-        </div>
-        <div class="explorer__slide"> <!-- This is a explorer slide section of the html document -->
-          <div class="explorer__slide-icon">🐘</div> <!-- This is a explorer slide icon section of the html document -->
-          <h3 class="explorer__slide-title">Herbivores</h3>
-          <!-- This is a explorer slide title section of the html document -->
-          <p class="explorer__slide-text">Herbivores eat only plants. They often have flat teeth for grinding.
-            Elephants, cows, rabbits and butterflies are herbivores. An elephant eats up to 150 kg of plants per day!
-          </p> <!-- This is a explorer slide text section of the html document -->
-        </div>
-        <div class="explorer__slide"> <!-- This is a explorer slide section of the html document -->
-          <div class="explorer__slide-icon">🐻</div> <!-- This is a explorer slide icon section of the html document -->
-          <h3 class="explorer__slide-title">Omnivores</h3>
-          <!-- This is a explorer slide title section of the html document -->
-          <p class="explorer__slide-text">Omnivores eat both plants and animals. This gives them a flexible diet — great
-            for survival! Bears, pigs, crows and humans are omnivores. We can eat a huge variety of foods.</p>
-          <!-- This is a explorer slide text section of the html document -->
-        </div>
-        <div class="explorer__slide"> <!-- This is a explorer slide section of the html document -->
-          <div class="explorer__slide-icon">🦋</div> <!-- This is a explorer slide icon section of the html document -->
-          <h3 class="explorer__slide-title">Metamorphosis</h3>
-          <!-- This is a explorer slide title section of the html document -->
-          <p class="explorer__slide-text">Some animals go through dramatic changes called metamorphosis. A caterpillar
-            turns into a butterfly inside a chrysalis. This amazing transformation takes about 2 weeks! A tadpole
-            becomes a frog over several months.</p> <!-- This is a explorer slide text section of the html document -->
-        </div>
-        <div class="explorer__slide"> <!-- This is a explorer slide section of the html document -->
-          <div class="explorer__slide-icon">🐻‍❄️</div>
-          <!-- This is a explorer slide icon section of the html document -->
-          <h3 class="explorer__slide-title">Hibernation & Migration</h3>
-          <!-- This is a explorer slide title section of the html document -->
-          <p class="explorer__slide-text">Some animals sleep through winter (hibernate) to survive cold and food
-            shortages. Bears, hedgehogs and bats hibernate. Others migrate — like birds flying thousands of kilometres
-            to warmer places for winter.</p> <!-- This is a explorer slide text section of the html document -->
-        </div>
-        <div class="explorer__dots"> <!-- This is a explorer dots section of the html document -->
-          <button class="explorer__dot active" aria-label="Carnivores"></button>
-          <!-- This is a explorer dot section of the html document -->
-          <button class="explorer__dot" aria-label="Herbivores"></button>
-          <!-- This is a explorer dot section of the html document -->
-          <button class="explorer__dot" aria-label="Omnivores"></button>
-          <!-- This is a explorer dot section of the html document -->
-          <button class="explorer__dot" aria-label="Metamorphosis"></button>
-          <!-- This is a explorer dot section of the html document -->
-          <button class="explorer__dot" aria-label="Hibernation & Migration"></button>
-          <!-- This is a explorer dot section of the html document -->
-
-        </div>
-      </div> <!-- This is a explorer section of the html document -->
-    </section> <!-- This is a section of the html document -->
-
-    <!-- SECRET REVEAL -->
-    <div class="secret-box reveal"> <!-- This is a secret box section of the html document -->
-      <button class="secret-btn" aria-expanded="false"> <!-- This is a secret button section of the html document -->
-        <span>🔒</span> <!-- This is a secret button section of the html document -->
+    <!-- ══════════════════════════════════════════════════
+         SECRET REVEAL BOX
+    ══════════════════════════════════════════════════ -->
+    <div class="secret-box reveal">
+      <button class="secret-btn" aria-expanded="false">
+        <span>🔒</span>
         <span class="secret-btn__label">Reveal the Secret!</span>
-        <!-- This is a secret button section of the html document -->
-        <span style="margin-left:auto; opacity:0.6; font-weight:400;">Click to unlock a mind-blowing fact →</span>
-        <!-- This is a secret button section of the html document -->
+        <span style="margin-left:auto; opacity:0.6; font-weight:400;">Click to unlock a super cool fact →</span>
       </button>
-      <div class="secret-content"> <!-- This is a secret content section of the html document -->
-        <strong>🤯 WOW!</strong> The <strong>blue whale</strong> is the largest animal that has ever lived on Earth —
-        bigger than any dinosaur! It can grow to 30 metres long and its heart is the size of a small car. You could
-        crawl through its arteries! <!-- This is a secret content section of the html document -->
+      <div class="secret-content">
+        <strong>🤯 WOW!</strong> The <strong>blue whale</strong> is the biggest animal
+        that has EVER lived🐋. It can be as long as <strong>three school buses</strong> put together!
+        And its heart is so big that it's the size of a <strong>small car</strong>! 🚗💙 Imagine a heart THAT big!
+        The blue whale weighing up to 200 tons and measuring up to 30 meters in length. It is a marine mammal that feeds
+        on krill, small crustaceans that live in the ocean.
       </div>
     </div>
 
-    <!-- SECTION 3: Summary -->
-    <section class="section--sm"> <!-- This is a section of the html document -->
-      <div class="section-header"> <!-- This is a section header of the html document -->
-        <div class="section-header__label">📋 Quick Recap</div> <!-- This is a section label of the html document -->
-        <h2 class="section-header__title">What Did We Learn?</h2> <!-- This is a section title of the html document -->
+    <!-- ══════════════════════════════════════════════════
+         SECTION 3 — Quick Summary
+    ══════════════════════════════════════════════════ -->
+    <section class="section--sm">
+      <div class="section-header">
+        <div class="section-header__label">📋 Quick Recap</div>
+        <h2 class="section-header__title">What Did We Learn?</h2>
       </div>
-      <div class="summary-grid"> <!-- This is a summary grid section of the html document -->
 
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🦁</div> <!-- This is a summary card icon section of the html document -->
+      <div class="summary-grid">
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🦁</div>
           <h4 class="summary-card__title">Mammals</h4>
-          <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">Warm-blooded, have hair, feed babies milk</p>
-          <!-- This is a summary card text section of the html document -->
+          <p class="summary-card__text">Have fur or hair and feed their babies milk!</p>
         </div>
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🐦</div> <!-- This is a summary card icon section of the html document -->
-          <h4 class="summary-card__title">Birds</h4> <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">Have feathers, lay eggs, most can fly</p>
-          <!-- This is a summary card text section of the html document -->
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🐦</div>
+          <h4 class="summary-card__title">Birds</h4>
+          <p class="summary-card__text">Have feathers, lay eggs, and most can fly!</p>
         </div>
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🐟</div> <!-- This is a summary card icon section of the html document -->
-          <h4 class="summary-card__title">Fish</h4> <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">Breathe with gills, live in water</p>
-          <!-- This is a summary card text section of the html document -->
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🐟</div>
+          <h4 class="summary-card__title">Fish</h4>
+          <p class="summary-card__text">Live in water and breathe with gills!</p>
         </div>
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🦎</div> <!-- This is a summary card icon section of the html document -->
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🦎</div>
           <h4 class="summary-card__title">Reptiles</h4>
-          <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">Cold-blooded, dry scaly skin</p>
-          <!-- This is a summary card text section of the html document -->
+          <p class="summary-card__text">Have scaly skin and love the warm sun!</p>
         </div>
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🐸</div> <!-- This is a summary card icon section of the html document -->
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🐸</div>
           <h4 class="summary-card__title">Amphibians</h4>
-          <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">Live in water AND on land</p>
-          <!-- This is a summary card text section of the html document -->
+          <p class="summary-card__text">Can live in water AND on land — like frogs!</p>
         </div>
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🦋</div> <!-- This is a summary card icon section of the html document -->
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🐛</div>
           <h4 class="summary-card__title">Insects</h4>
-          <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">6 legs, most numerous animals on Earth</p>
-          <!-- This is a summary card text section of the html document -->
+          <p class="summary-card__text">Have 6 legs — the biggest animal group on Earth!</p>
         </div>
+
       </div>
     </section>
 
   </main>
 
   <!-- CHAPTER NAV -->
-  <div class="chapter-nav"> <!-- This is a chapter nav section of the html document -->
-    <a href="plants.html" class="chapter-nav__btn">← Chapter 02: Plants</a>
-    <!-- This is a chapter nav button section of the html document -->
+  <div class="chapter-nav">
+    <a href="03_plants.html" class="chapter-nav__btn">← Chapter 03: Plants</a>
     <a href="../quiz.html" class="chapter-nav__quiz">🎯 Test Your Knowledge!</a>
-    <!-- This is a chapter nav quiz section of the html document -->
-    <a href="five-senses.html" class="chapter-nav__btn">Chapter 4: Five Senses →</a>
-    <!-- This is a chapter nav button section of the html document -->
+    <a href="05_weather.html" class="chapter-nav__btn">Chapter 05: Weather →</a>
   </div>
 
-  <footer> <!-- This is a footer section of the html document -->
-    <div class="container"> <!-- This is a container section of the html document -->
+  <footer>
+    <div class="container">
       <div class="footer__logo">⭐ Science for Little Stars</div>
-      <!-- This is a footer logo section of the html document -->
-      <div class="footer__links"> <!-- This is a footer links section of the html document -->
-        <a href="../index.html">Home</a> <!-- This is a footer link section of the html document -->
-        <a href="../quiz.html">Quiz</a> <!-- This is a footer link section of the html document -->
-        <a href="five-senses.html">Next Chapter</a> <!-- This is a footer link section of the html document -->
+      <div class="footer__links">
+        <a href="../index.html">Home</a>
+        <a href="../quiz.html">Quiz</a>
+        <a href="05_weather.html">Next Chapter</a>
       </div>
       <p>Authored by Ambreen Abdul Raheem. The Data Analyst And Web Developer. Copyright © 2026.</p>
-      <!-- This is a footer paragraph section of the html document -->
     </div>
   </footer>
 
