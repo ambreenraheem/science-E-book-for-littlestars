@@ -10,8 +10,22 @@
   <style>
     :root { --accent: #3cb35a; --accent-light: #d1fae5; }
   </style>
+  <!-- ✅ 1. Twemoji script — HEAD mein add karo -->
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
+   <!-- ...tumhara poora page content... -->
+
+  <!-- ✅ 2. Yeh BODY ke bilkul end mein, </body> se pehle add karo -->
+  <script>
+    twemoji.parse(document.body, {
+      folder: 'svg',
+      ext: '.svg'
+    });
+  </script>
+
+</body>
+</html>
 
   <!-- ═══════════════════════════════════════════════════════
        NAVIGATION
