@@ -1,18 +1,19 @@
 <!-- 
   Science for Little Stars - Chapter 01: Our Amazing Body
-  Interactive Science E-book for Kids (Grades 1-3)
+  Interactive Science E-book for Kids (Ages 6–8)
   https://ambreenraheem.github.io/science-for-little-stars/
 -->
 
-<!DOCTYPE html> <!-- This is a starting tag of the html document -->
-<html lang="en"> <!-- This is a language attribute -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" /> <!-- This is a character encoding of the html document -->
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- This is a viewport meta tag of the html document -->
-  <title>Chapter 01: Our Amazing Body | Science for Little Stars</title> <!-- This is a title of the html document -->
-  <link rel="stylesheet" href="../css/style.css" /> <!-- This is a stylesheet of the html document -->
+  <title>Chapter 01: Our Amazing Body | Science for Little Stars</title>
+  <meta name="description"
+    content="Learn about your amazing body! Discover your bones, muscles, heart, brain and lungs — fun science for kids ages 6 to 8." />
+  <link rel="stylesheet" href="../css/style.css" />
   <style>
     :root {
       --accent: #ec4899;
@@ -21,373 +22,347 @@
   </style>
 </head>
 
-<body> <!-- This is a body section of the html document -->
+<body>
 
   <!-- NAV -->
-  <!-- This is a navigation section of the html document -->
-  <nav class="nav"> <!-- This is a navigation section of the html document -->
-    <div class="nav__inner"> <!-- This is a inner section of the html document -->
+  <nav class="nav">
+    <div class="nav__inner">
       <a href="../index.html" class="nav__logo"><span>⭐</span> Science for Little Stars</a>
-      <!-- This is a logo section of the html document -->
-      <div class="nav__links"> <!-- This is a links section of the html document -->
-        <a href="../index.html">Home</a> <!-- This is a home link of the html document -->
-        <a href="#" class="active">Ch 01: Our Amazing Body</a> <!-- This is a active link of the html document -->
-        <a href="energy-electricity.html">Next Chapter →</a> <!-- This is a next chapter link of the html document -->
-        <a href="../quiz.html" class="nav__cta">🎯 Quiz!</a> <!-- This is a quiz button of the html document -->
+      <div class="nav__links">
+        <a href="../index.html">Home</a>
+        <a href="#" class="active">Ch 01: Our Amazing Body</a>
+        <a href="02_five-senses.html">Next Chapter →</a>
+        <a href="../quiz.html" class="nav__cta">🎯 Quiz!</a>
       </div>
       <button class="nav__hamburger" id="nav-hamburger"
         aria-label="Open menu"><span></span><span></span><span></span></button>
-      <!-- This is a mobile hamburger section of the html document -->
     </div>
-    <div class="nav__mobile" id="nav-mobile"> <!-- This is a mobile menu section of the html document -->
-      <a href="../index.html">🏠 Home</a> <!-- This is a home link of the html document -->
+    <div class="nav__mobile" id="nav-mobile">
+      <a href="../index.html">🏠 Home</a>
       <a href="02_five-senses.html">Next: Five Senses</a>
-      <!-- This is a next chapter link of the html document -->
-      <a href="../quiz.html">🎯 Take the Quiz!</a> <!-- This is a quiz button of the html document -->
+      <a href="../quiz.html">🎯 Take the Quiz!</a>
     </div>
   </nav>
 
   <!-- CHAPTER HERO -->
-  <!-- This is a chapter hero section of the html document -->
-  <header class="chapter-hero" data-emoji="🫀"> <!-- This is a chapter hero section of the html document -->
-    <div class="container"> <!-- This is a container section of the html document -->
-      <div class="chapter-hero__inner"> <!-- This is a inner section of the html document -->
+  <header class="chapter-hero" data-emoji="🫀">
+    <div class="container">
+      <div class="chapter-hero__inner">
         <a href="../index.html" class="chapter-hero__back">← Back to all chapters</a>
-        <!-- This is a back to all chapters link of the html document -->
-        <div class="chapter-hero__num">Chapter 01</div> <!-- This is a chapter number section of the html document -->
+        <div class="chapter-hero__num">Chapter 01</div>
         <h1 class="chapter-hero__title">Our Amazing Body 🫀</h1>
-        <!-- This is a chapter title section of the html document -->
-        <p class="chapter-hero__subtitle">Your body is the most incredible machine ever made! Let's explore the systems
-          that keep you alive and thriving every day.</p>
-        <!-- This is a chapter subtitle section of the html document -->
+        <p class="chapter-hero__subtitle">Your body is like a super machine! Let's find out
+          what is inside you and how it all works together. Ready? Let's go! 🚀</p>
       </div>
-    </div> <!-- This is a container section of the html document -->
-  </header> <!-- This is a chapter hero section of the html document -->
+    </div>
+  </header>
 
-  <main class="container"> <!-- This is a main section of the html document -->
+  <main class="container">
 
-    <!-- SECTION 1: Intro --> <!-- This is a section 1 of the html document -->
-    <section class="section--sm"> <!-- This is a section 1 of the html document -->
-      <div class="section-header"> <!-- This is a section header of the html document -->
+    <!-- ══════════════════════════════════════════════════
+         SECTION 1 — Introduction
+    ══════════════════════════════════════════════════ -->
+    <section class="section--sm">
+      <div class="section-header">
         <div class="section-header__label">🫀 Let's Discover</div>
-        <!-- This is a section header label of the html document -->
-        <h2 class="section-header__title">The Human Body</h2>
-        <!-- This is a section header title of the html document -->
-        <p class="section-header__desc">Your body is made of trillions of cells, hundreds of bones, and dozens of
-          organs.
-          All working together perfectly every second of your life!
-          Right now, without you thinking about it, your body is doing something
-          extraordinary. Your heart is beating. Your lungs are breathing.
-          Your brain is reading these words. Your stomach is digesting your last meal.
-          Your bones are growing. Your skin is repairing tiny scratches. All at once! 🤯
-
-          Your body is made of about 37 TRILLION cells — tiny living building blocks
-          too small to see! Each one has a job to do. Together they form tissues,
-          tissues form organs, and organs work in teams called body systems.
-
-          There are 11 major body systems — and today we are going to explore
-          the most important ones, one magnificent step at a time! 🚀
+        <h2 class="section-header__title">Your Super Body</h2>
+        <p class="section-header__desc">
+          Did you know your body is always working — even when you sleep? 😴<br><br>
+          Right now your <strong>heart</strong> is beating, your <strong>lungs</strong> are
+          breathing, and your <strong>brain</strong> is reading these words! All at the same time! 🤯<br><br>
+          Your body is made of tiny pieces called <strong>cells</strong>. Cells are so small you
+          cannot see them! They join together to make your bones, muscles, skin, and
+          everything else. Let's meet the amazing parts of your body! 🌟
         </p>
-        <!-- This is a section header description of the html document -->
       </div>
-      <div class="fun-cards"> <!-- This is a fun cards section of the html document -->
 
-        <div class="fun-card reveal"> <!-- This is a fun card section of the html document -->
-          <span class="fun-card__icon">🦴</span> <!-- This is a fun card icon section of the html document -->
-          <h3 class="fun-card__title">Your Skeleton - The Living Framework</h3>
-          <!-- This is a fun card title section of the html document -->
-          <p class="fun-card__text">Your body has 206 bones (babies have about 270 — they fuse together as you grow!).
-            Bones give your body shape, protect your organs, and make blood cells in the bone marrow. Joints where bones
-            meet allow movement.
+      <div class="fun-cards">
 
-            And here is the most surprising thing — your bones are ALIVE!
-            They have blood vessels and nerves running through them,
-            they grow, they repair themselves when broken, and they are
-            constantly being rebuilt from the inside! 🌱
-
-            What your skeleton does — step by step:
-            [
-            (1, "🏗️", "Gives you shape", "Without your skeleton, you would be a soft blob on the floor! Your bones give
-            your body its shape — your spine keeps you upright, your skull makes your face! 😄"),
-            (2, "🛡️", "Protects vital organs", "Your SKULL is a hard helmet protecting your brain. Your RIB CAGE is a
-            bony cage protecting your heart and lungs. Your SPINE protects the spinal cord!"),
-            (3, "💪", "Enables movement", "Bones work with muscles like levers! When a muscle pulls on a bone, the bone
-            moves — every step, kick, and wave of your hand is bones and muscles working together."),
-            (4, "🩸", "Makes blood cells", "Inside your larger bones is soft BONE MARROW — a factory that makes millions
-            of new red and white blood cells every single second! 🏭"),
-            (5, "🧪", "Stores minerals", "Your bones store important minerals — especially CALCIUM and PHOSPHORUS — that
-            your body uses for muscle contractions, nerve signals, and building more bone. 🥛"),
-            ]
-          </p> <!-- This is a fun card text section of the html document -->
+        <!-- Card 1 — Bones -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🦴</span>
+          <h3 class="fun-card__title">Your Bones — The Strong Frame</h3>
+          <p class="fun-card__text">
+            You have <strong>206 bones</strong> inside your body! They give you your shape —
+            without them you would be all wobbly like a jellyfish! 🪼<br><br>
+            🏗️ <strong>Bones give you shape</strong> — your spine keeps you standing tall!<br>
+            🛡️ <strong>Bones protect you</strong> — your skull is like a helmet for your brain!<br>
+            💪 <strong>Bones help you move</strong> — when muscles pull on bones, you walk, run, and jump!<br>
+            🩸 <strong>Bones make blood</strong> — inside some big bones, new blood is being made right now!<br><br>
+            <strong>Fun fact:</strong> Babies are born with about 270 bones! As you grow up, some of them
+            join together. Cool, right? 😄
+          </p>
         </div>
-        <div class="fun-card reveal"> <!-- This is a fun card section of the html document -->
-          <span class="fun-card__icon">💪</span> <!-- This is a fun card icon section of the html document -->
-          <h3 class="fun-card__title">The Muscular System</h3>
-          <!-- This is a fun card title section of the html document -->
-          <p class="fun-card__text">You have over 600 muscles! They work in pairs — one contracts, the other relaxes.
-            Your heart is a special muscle that never stops working. The smallest muscle is in your ear; the largest is
-            the gluteus maximus (your bottom!).
 
-            You have over 600 muscles in your body — and they are responsible for
-            every single movement you make, from blinking to running a marathon! 🏃
-
-            Muscles work by contracting (getting shorter and fatter) and
-            relaxing (going back to normal length). They can ONLY pull — never push!
-            That is why muscles always work in pairs. 🔄
-
-            How muscles work — step by step:
-            [
-            (1, "🧠", "Brain sends signal", "Your brain sends an electrical signal down a nerve to the muscle — like
-            sending a text message! The signal arrives in milliseconds. ⚡"),
-            (2, "⚗️", "Chemical reaction", "The nerve signal triggers a chemical reaction inside the muscle fibres —
-            calcium floods in and tiny protein filaments (actin and myosin) grab each other!"),
-            (3, "💪", "Muscle contracts", "The protein filaments slide together, pulling the ends of the muscle
-            toward the middle — the whole muscle gets shorter and fatter (contracts)! 💥"),
-            (4, "🦴", "Bone is pulled", "The muscle is attached to two bones by tough TENDONS. When the muscle
-            contracts, it pulls the bone and the joint moves — you move! 🦵"),
-            (5, "🔄", "Muscle pair relaxes", "When the muscle relaxes, the opposing muscle on the other side of
-            the joint contracts to move the bone back — muscles ALWAYS work in opposing pairs! 🤝"),
-            ]
-          </p> <!-- This is a fun card text section of the html document -->
+        <!-- Card 2 — Muscles -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">💪</span>
+          <h3 class="fun-card__title">Your Muscles — The Movers</h3>
+          <p class="fun-card__text">
+            You have more than <strong>600 muscles</strong>! Muscles are what make you move.
+            Every time you smile, blink, or wiggle your toes — that's your muscles working! 😁<br><br>
+            🧠 Your <strong>brain tells your muscles</strong> what to do by sending tiny signals.<br>
+            🤝 Muscles work in <strong>teams of two</strong> — when one pulls, the other rests. Then they swap!<br>
+            ❤️ Your <strong>heart is a special muscle</strong> that never stops working. It beats all day and all
+            night!<br><br>
+            <strong>Fun fact:</strong> The biggest muscle in your body is in your bottom — it
+            helps you stand up and climb stairs! 🏔️
+          </p>
         </div>
-        <div class="fun-card reveal"> <!-- This is a fun card section of the html document -->
-          <span class="fun-card__icon">🫀</span> <!-- This is a fun card icon section of the html document -->
-          <h3 class="fun-card__title">The Circulatory System</h3>
-          <!-- This is a fun card title section of the html document -->
-          <p class="fun-card__text">Your heart pumps blood through 100,000 km of blood vessels — enough to circle Earth
-            2.5 times! Red blood cells carry oxygen; white blood cells fight germs. Your heart beats about 100,000 times
-            every day!
-            Your **heart** is the most hardworking organ in your whole body —
-            it never stops, not even for a second, from before you are born
-            until the very last moment of your life! 💓
 
-            **How your heart pumps blood — step by step:**
-            [
-            (1, "🫁", "Blood arrives from the lungs", "Oxygen-rich red blood returns from your lungs into the LEFT
-            side of your heart, ready to be pumped around the body! 🔴"),
-            (2, "💥", "Left ventricle contracts", "The powerful LEFT VENTRICLE (lower left chamber) squeezes hard —
-            pumping the oxygen-rich blood out through the AORTA, the body's largest artery! 🚀"),
-            (3, "🌍", "Blood travels the whole body", "The blood races through 96,000 km of blood vessels —
-            delivering oxygen and nutrients to every single cell in your body. A complete circuit in just 60 seconds!
-            ⏱️"),
-            (4, "🔵", "Used blood returns", "After delivering its oxygen, the dark blue-red blood returns to the
-            RIGHT side of the heart through large veins called the VENA CAVA. 🔵"),
-            (5, "🫁", "Right side sends to lungs", "The RIGHT VENTRICLE pumps the used blood to the LUNGS — where it
-            picks up fresh oxygen and releases carbon dioxide. Then the whole cycle starts again! 🔄"),
-            ]
-            (1, "🫁", "Blood arrives from the lungs", "Oxygen-rich red blood returns from your lungs into the LEFT side
-            of your heart, ready to be pumped around the body! 🔴"),
-            (2, "💥", "Left ventricle contracts", "The powerful LEFT VENTRICLE (lower left chamber) squeezes hard —
-            pumping the oxygen-rich blood out through the AORTA, the body's largest artery! 🚀"),
-            (3, "🌍", "Blood travels the whole body", "The blood races through 96,000 km of blood vessels — delivering
-            oxygen and nutrients to every single cell in your body. A complete circuit in just 60 seconds! ⏱️"),
-            (4, "🔵", "Used blood returns", "After delivering its oxygen, the dark blue-red blood returns to the RIGHT
-            side of the heart through large veins called the VENA CAVA. 🔵"),
-            (5, "🫁", "Right side sends to lungs", "The RIGHT VENTRICLE pumps the used blood to the LUNGS — where it
-            picks up fresh oxygen and releases carbon dioxide. Then the whole cycle starts again! 🔄"),
-            ]
-
-            Your circulatory system has three main parts:
-            [
-            (1, "❤️", "Heart", "A powerful muscle that pumps blood 24/7 — it never rests!"),
-            (2, "🩸", "Blood", "The transport system — red cells carry oxygen, white cells fight germs, platelets
-            stop bleeding, plasma carries nutrients!"),
-            (3, "🫁", "Blood Vessels", "Arteries carry blood away from the heart, veins carry it back, capillaries
-            are tiny vessels where oxygen and nutrients are exchanged with cells!"),
-            ]
-
-          </p> <!-- This is a fun card text section of the html document -->
+        <!-- Card 3 — Heart & Blood -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🫀</span>
+          <h3 class="fun-card__title">Your Heart — The Pumping Machine</h3>
+          <p class="fun-card__text">
+            Your heart is about the <strong>size of your fist</strong>. It pumps blood
+            all around your body every single second! 💓<br><br>
+            🔴 Blood carries <strong>oxygen</strong> (the air you breathe in) to every part of your body.<br>
+            🛡️ Blood also has tiny <strong>germ fighters</strong> called white blood cells that keep you healthy!<br>
+            🔄 Blood travels in <strong>tubes called blood vessels</strong> — they go everywhere, even to your
+            toes!<br><br>
+            <strong>Fun fact:</strong> Your heart beats about <strong>100,000 times</strong> every day!
+            Put your hand on your chest — can you feel it? 🥁
+          </p>
         </div>
-        <div class="fun-card reveal"> <!-- This is a fun card section of the html document -->
-          <span class="fun-card__icon">🧠</span> <!-- This is a fun card icon section of the html document -->
-          <h3 class="fun-card__title">The Nervous System</h3>
-          <!-- This is a fun card title section of the html document -->
-          <p class="fun-card__text">Your brain is the control centre — it receives signals from everywhere and sends
-            instructions back. Nerves carry these signals at up to 430 km/h! The brain uses 20% of all your body's
-            energy, even while sleeping.</p> <!-- This is a fun card text section of the html document -->
+
+        <!-- Card 4 — Brain -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🧠</span>
+          <h3 class="fun-card__title">Your Brain — The Boss</h3>
+          <p class="fun-card__text">
+            Your brain is the <strong>boss of your whole body</strong>! It sits inside your skull
+            and tells everything what to do. 🎩<br><br>
+            🤔 Your brain helps you <strong>think, learn, and remember</strong> things.<br>
+            😊 It controls your <strong>feelings</strong> — like when you feel happy or scared.<br>
+            ⚡ It sends <strong>super-fast messages</strong> through your body using nerves — like tiny wires!<br><br>
+            <strong>Fun fact:</strong> Your brain is always working, even when you are
+            asleep — it helps you dream! 💤✨
+          </p>
         </div>
+
+        <!-- Card 5 -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🫁</span>
+          <h3 class="fun-card__title">Your Lungs — The Air Machines</h3>
+          <p class="fun-card__text">
+            Your lungs are like two big balloons inside your chest. They help you breathe in
+            the air you need to live! 🌬️<br><br>
+            inhale <strong>Oxygen</strong> — the air that keeps your body working.<br>
+            exhale <strong>Carbon Dioxide</strong> — the air your body doesn't need anymore.<br><br>
+            <strong>Fun fact:</strong> When you run or play, you breathe faster to get more oxygen!
+            Try taking a deep breath — that's your lungs at work! 🏃‍♀️💨
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="fun-card reveal">
+          <span class="fun-card__icon">🧫</span>
+          <h3 class="fun-card__title">Cells — The Building Blocks</h3>
+          <p class="fun-card__text">
+            Your body is made of tiny pieces called <strong>cells</strong>. Cells are so small you
+            cannot see them! They join together to make your bones, muscles, skin, and
+            everything else. 🌟
+          </p>
+        </div>
+
       </div>
     </section>
 
-    <!-- THINK BUBBLE -->
-    <div class="think-bubble reveal"> <!-- This is a think bubble section of the html document -->
-      <span class="think-bubble__icon">💭</span> <!-- This is a think bubble icon section of the html document -->
+    <!-- ══════════════════════════════════════════════════
+         THINK BUBBLE
+    ══════════════════════════════════════════════════ -->
+    <div class="think-bubble reveal">
+      <span class="think-bubble__icon">💭</span>
       <div class="think-bubble__title">Think About It!</div>
-      <!-- This is a think bubble title section of the html document -->
-      <p class="think-bubble__text">Right now, your body is doing millions of things you're completely unaware of —
-        digesting food, making new blood cells, repairing damaged cells, regulating temperature, and even growing! Your
-        body works harder than any machine ever built. 🦾</p>
-      <!-- This is a think bubble text section of the html document -->
-    </div> <!-- This is a think bubble section of the html document -->
+      <p class="think-bubble__text">Right now your body is doing so many things without
+        you even thinking about it — breathing, pumping blood, growing, and even fixing
+        tiny scratches on your skin! Your body is more amazing than any robot ever made! 🤖✨</p>
+    </div>
 
-    <!-- SECTION 2: Explorer -->
-    <section class="section--sm"> <!-- This is a section 2 of the html document -->
-      <div class="section-header"> <!-- This is a section header of the html document -->
+    <!-- ══════════════════════════════════════════════════
+         SECTION 2 — Body Systems Explorer (interactive slides)
+    ══════════════════════════════════════════════════ -->
+    <section class="section--sm">
+      <div class="section-header">
         <div class="section-header__label">🫀 Body Systems Explorer</div>
-        <!-- This is a section header label of the html document -->
         <h2 class="section-header__title">Explore Your Body Systems</h2>
-        <!-- This is a section header title of the html document -->
       </div>
-      <div class="explorer reveal"> <!-- This is a explorer section of the html document -->
-        <div class="explorer__header"> <!-- This is a explorer header section of the html document -->
+
+      <div class="explorer reveal">
+        <div class="explorer__header">
           <h3 class="explorer__title">Click ← → to explore</h3>
-          <div class="explorer__controls"> <!-- This is a explorer controls section of the html document -->
+          <div class="explorer__controls">
             <button class="explorer__btn prev-btn" aria-label="Previous">←</button>
-            <!-- This is a explorer button section of the html document -->
             <button class="explorer__btn next-btn" aria-label="Next">→</button>
-            <!-- This is a explorer button section of the html document -->
           </div>
         </div>
 
-        <div class="explorer__slide active"> <!-- This is a explorer slide section of the html document -->
-          <div class="explorer__slide-icon">🫁</div> <!-- This is a explorer slide icon section of the html document -->
-          <h3 class="explorer__slide-title">Respiratory System</h3>
-          <!-- This is a explorer slide title section of the html document -->
-          <p class="explorer__slide-text">Every breath you take fills your lungs with air. Oxygen passes through tiny
-            air sacs (alveoli) into the blood, while carbon dioxide passes out. You breathe about 20,000 times per day!
-            During exercise your breathing rate increases to supply more oxygen to your muscles.</p>
-          <!-- This is a explorer slide text section of the html document -->
-        </div>
-        <div class="explorer__slide"> <!-- This is a explorer slide section of the html document -->
-          <div class="explorer__slide-icon">🍽️</div>
-          <!-- This is a explorer slide icon section of the html document -->
-          <h3 class="explorer__slide-title">Digestive System</h3>
-          <!-- This is a explorer slide title section of the html document -->
-          <p class="explorer__slide-text">Food travels 9 metres through your digestive system! It starts in your mouth
-            (chewing + saliva), goes down the oesophagus, into the stomach (acid breaks it down), through the small
-            intestine (nutrients absorbed) and large intestine (water absorbed), finishing at the rectum. This journey
-            takes 24-72 hours!</p> <!-- This is a explorer slide text section of the html document -->
-        </div>
-        <div class="explorer__slide"> <!-- This is a explorer slide section of the html document -->
-          <div class="explorer__slide-icon">🫀</div> <!-- This is a explorer slide icon section of the html document -->
-          <h3 class="explorer__slide-title">Heart & Blood</h3>
-          <!-- This is a explorer slide title section of the html document -->
-          <p class="explorer__slide-text">Your fist-sized heart is the hardest-working muscle in your body. It has 4
-            chambers: right atrium, right ventricle, left atrium and left ventricle. Blood picks up oxygen in the lungs,
-            delivers it to the body, then returns to the heart — a complete circuit every 20 seconds!</p>
-        </div>
-        <div class="explorer__slide"> <!-- This is a explorer slide section of the html document -->
-          <div class="explorer__slide-icon">🦴</div> <!-- This is a explorer slide icon section of the html document -->
-          <h3 class="explorer__slide-title">Bones & Joints</h3>
-          <!-- This is a explorer slide title section of the html document -->
-          <p class="explorer__slide-text">Bones are not dead — they're living tissue filled with blood vessels and
-            nerves! Bone marrow produces 2 million red blood cells every second. Joints allow different types of
-            movement: ball-and-socket (shoulder — rotates), hinge (knee — bends one way), and pivot (neck — rotates).
+        <!-- Slide 1 — Lungs -->
+        <div class="explorer__slide active">
+          <div class="explorer__slide-icon">🫁</div>
+          <h3 class="explorer__slide-title">Your Lungs — Breathing In and Out</h3>
+          <p class="explorer__slide-text">
+            Take a deep breath in… and breathe out! 🌬️ That is your <strong>lungs</strong>
+            at work! You have two lungs inside your chest. When you breathe in, your lungs
+            fill up with air like balloons. They take the <strong>oxygen</strong> your body
+            needs and push out a gas called <strong>carbon dioxide</strong> that your body
+            doesn't need. You breathe about <strong>20,000 times every day</strong> —
+            and you don't even have to think about it!
           </p>
         </div>
-        <div class="explorer__slide"> <!-- This is a explorer slide section of the html document -->
-          <div class="explorer__slide-icon">🧠</div> <!-- This is a explorer slide icon section of the html document -->
-          <h3 class="explorer__slide-title">Your Amazing Brain</h3>
-          <!-- This is a explorer slide title section of the html document -->
-          <p class="explorer__slide-text">The brain has 86 billion neurons (nerve cells) connected by trillions of
-            synapses. It processes information, stores memories, controls emotions, and runs your body — all
-            simultaneously! Sleep is crucial for your brain to sort memories and repair itself. Never underestimate a
-            good night's sleep!</p> <!-- This is a explorer slide text section of the html document -->
-        </div>
-        <div class="explorer__dots"> <!-- This is a explorer dots section of the html document -->
-          <button class="explorer__dot active" aria-label="Respiratory System"></button>
-          <button class="explorer__dot" aria-label="Digestive System"></button>
-          <button class="explorer__dot" aria-label="Heart & Blood"></button>
-          <button class="explorer__dot" aria-label="Bones & Joints"></button>
-          <button class="explorer__dot" aria-label="Your Amazing Brain"></button>
 
+        <!-- Slide 2 — Tummy -->
+        <div class="explorer__slide">
+          <div class="explorer__slide-icon">🍽️</div>
+          <h3 class="explorer__slide-title">Your Tummy — Where Food Goes</h3>
+          <p class="explorer__slide-text">
+            When you eat a yummy sandwich 🥪, where does it go? First you chew it with your
+            teeth. Then you swallow and it slides down a tube into your <strong>stomach</strong>.
+            Your stomach is like a mixing machine — it mashes the food into tiny bits! Then
+            the good stuff (called <strong>nutrients</strong>) goes into your blood to give
+            you energy. The journey of your food takes about a whole day! 🕐
+          </p>
+        </div>
+
+        <!-- Slide 3 — Heart -->
+        <div class="explorer__slide">
+          <div class="explorer__slide-icon">🫀</div>
+          <h3 class="explorer__slide-title">Your Heart — Pump, Pump, Pump!</h3>
+          <p class="explorer__slide-text">
+            Your heart is a super strong muscle about the size of your fist! ✊ It
+            <strong>pumps blood</strong> all around your body through tubes called blood
+            vessels. The blood carries oxygen from your lungs to every part of you —
+            your fingers, your toes, and even your brain! Then the blood comes back to
+            your heart and the whole trip starts again. One full trip takes only about
+            <strong>one minute</strong>! ⏱️
+          </p>
+        </div>
+
+        <!-- Slide 4 — Bones -->
+        <div class="explorer__slide">
+          <div class="explorer__slide-icon">🦴</div>
+          <h3 class="explorer__slide-title">Your Bones — Strong and Alive!</h3>
+          <p class="explorer__slide-text">
+            Did you know your bones are <strong>alive</strong>? They grow, they get stronger,
+            and they can even fix themselves if they break! 💪 Your bones all connect at
+            places called <strong>joints</strong>. Some joints let you bend (like your knee 🦵),
+            and some let you twist (like your neck!). Drinking <strong>milk</strong> 🥛
+            and eating healthy food helps your bones grow big and strong!
+          </p>
+        </div>
+
+        <!-- Slide 5 — Brain -->
+        <div class="explorer__slide">
+          <div class="explorer__slide-icon">🧠</div>
+          <h3 class="explorer__slide-title">Your Brain — The Control Centre</h3>
+          <p class="explorer__slide-text">
+            Your brain is the <strong>smartest part</strong> of your body! 🎓 Different parts
+            of the brain do different jobs. One part helps you <strong>see</strong>, another
+            helps you <strong>hear</strong>, and another helps you <strong>remember</strong>
+            your favourite song! 🎵 Your brain also makes sure you keep breathing and your
+            heart keeps beating — even when you're fast asleep! Getting lots of
+            <strong>sleep</strong> helps your brain learn and grow. 😴💤
+          </p>
+        </div>
+
+        <div class="explorer__dots">
+          <button class="explorer__dot active" aria-label="Lungs"></button>
+          <button class="explorer__dot" aria-label="Tummy"></button>
+          <button class="explorer__dot" aria-label="Heart"></button>
+          <button class="explorer__dot" aria-label="Bones"></button>
+          <button class="explorer__dot" aria-label="Brain"></button>
         </div>
       </div>
     </section>
 
-    <!-- SECRET REVEAL -->
-    <div class="secret-box reveal"> <!-- This is a secret box section of the html document -->
-      <button class="secret-btn" aria-expanded="false"> <!-- This is a secret button section of the html document -->
+    <!-- ══════════════════════════════════════════════════
+         SECRET REVEAL BOX
+    ══════════════════════════════════════════════════ -->
+    <div class="secret-box reveal">
+      <button class="secret-btn" aria-expanded="false">
         <span>🔒</span>
         <span class="secret-btn__label">Reveal the Secret!</span>
-        <span style="margin-left:auto; opacity:0.6; font-weight:400;">Click to unlock a mind-blowing fact →</span>
+        <span style="margin-left:auto; opacity:0.6; font-weight:400;">Click to unlock a super cool fact →</span>
       </button>
-      <div class="secret-content"> <!-- This is a secret content section of the html document -->
-        <strong>🤯 WOW!</strong> Your small intestine is about <strong>6 metres long</strong> — but its inner surface
-        area is <strong>250 square metres</strong> (the size of a tennis court!) because of millions of tiny finger-like
-        projections called villi. This huge surface area allows nutrients to be absorbed extremely efficiently!
+      <div class="secret-content">
+        <strong>🤯 WOW!</strong> If you could lay out all your <strong>blood vessels</strong>
+        (the tiny tubes that carry blood) in a straight line, they would stretch
+        <strong>over 96,000 kilometres</strong> — that's enough to go around the Earth
+        <strong>more than two times</strong>! And all of that fits inside your body! 🌍🌍
       </div>
     </div>
 
-    <!-- SECTION 3: Summary -->
-    <section class="section--sm"> <!-- This is a section 3 of the html document -->
-      <div class="section-header"> <!-- This is a section header of the html document -->
+    <!-- ══════════════════════════════════════════════════
+         SECTION 3 — Quick Summary
+    ══════════════════════════════════════════════════ -->
+    <section class="section--sm">
+      <div class="section-header">
         <div class="section-header__label">📋 Quick Recap</div>
         <h2 class="section-header__title">What Did We Learn?</h2>
       </div>
-      <div class="summary-grid"> <!-- This is a summary grid section of the html document -->
 
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🦴</div> <!-- This is a summary card icon section of the html document -->
-          <h4 class="summary-card__title">Skeletal System</h4>
-          <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">206 bones give shape and make blood cells</p>
-          <!-- This is a summary card text section of the html document -->
-        </div>
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">💪</div> <!-- This is a summary card icon section of the html document -->
-          <h4 class="summary-card__title">Muscular System</h4>
-          <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">600+ muscles enable all movement</p>
-          <!-- This is a summary card text section of the html document -->
-        </div>
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🫀</div> <!-- This is a summary card icon section of the html document -->
-          <h4 class="summary-card__title">Circulatory</h4>
-          <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">Heart pumps blood through 100,000 km of vessels</p>
-          <!-- This is a summary card text section of the html document -->
-        </div>
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🧠</div> <!-- This is a summary card icon section of the html document -->
-          <h4 class="summary-card__title">Nervous System</h4>
-          <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">Brain and nerves control everything</p>
-          <!-- This is a summary card text section of the html document -->
-        </div>
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🫁</div> <!-- This is a summary card icon section of the html document -->
-          <h4 class="summary-card__title">Respiratory</h4>
-          <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">Lungs exchange oxygen for carbon dioxide</p>
-          <!-- This is a summary card text section of the html document -->
-        </div>
-        <div class="summary-card reveal"> <!-- This is a summary card section of the html document -->
-          <div class="summary-card__icon">🍽️</div> <!-- This is a summary card icon section of the html document -->
-          <h4 class="summary-card__title">Digestive</h4>
-          <!-- This is a summary card title section of the html document -->
-          <p class="summary-card__text">9-metre journey to process food</p>
-          <!-- This is a summary card text section of the html document -->
-        </div>
-      </div> <!-- This is a summary grid section of the html document -->
-    </section> <!-- This is a section 3 of the html document -->
+      <div class="summary-grid">
 
-  </main> <!-- This is a main section of the html document -->
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🦴</div>
+          <h4 class="summary-card__title">Bones</h4>
+          <p class="summary-card__text">206 bones give your body its shape and protect your insides!</p>
+        </div>
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">💪</div>
+          <h4 class="summary-card__title">Muscles</h4>
+          <p class="summary-card__text">Over 600 muscles help you move, smile, and even blink!</p>
+        </div>
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🫀</div>
+          <h4 class="summary-card__title">Heart</h4>
+          <p class="summary-card__text">Your heart pumps blood all day and all night — it never stops!</p>
+        </div>
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🧠</div>
+          <h4 class="summary-card__title">Brain</h4>
+          <p class="summary-card__text">Your brain is the boss — it tells your whole body what to do!</p>
+        </div>
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🫁</div>
+          <h4 class="summary-card__title">Lungs</h4>
+          <p class="summary-card__text">You breathe about 20,000 times a day to get fresh air!</p>
+        </div>
+
+        <div class="summary-card reveal">
+          <div class="summary-card__icon">🍽️</div>
+          <h4 class="summary-card__title">Tummy</h4>
+          <p class="summary-card__text">Your stomach mashes food and turns it into energy for you!</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 
   <!-- CHAPTER NAV -->
-  <div class="chapter-nav"> <!-- This is a chapter nav section of the html document -->
-    <a href="simple-machines.html" class="chapter-nav__btn">← Chapter 02: Simple Machines</a>
-    <!-- This is a chapter nav button of the html document -->
+  <div class="chapter-nav">
+    <a href="../index.html" class="chapter-nav__btn">← Back Home</a>
     <a href="../quiz.html" class="chapter-nav__quiz">🎯 Test Your Knowledge!</a>
-    <!-- This is a chapter nav quiz button of the html document -->
-    <a href="energy-electricity.html" class="chapter-nav__btn">Chapter 03: Energy & Electricity →</a>
-    <!-- This is a chapter nav button of the html document -->
+    <a href="02_five-senses.html" class="chapter-nav__btn">Chapter 02: Five Senses →</a>
   </div>
 
-  <footer> <!-- This is a footer section of the html document -->
-    <div class="container"> <!-- This is a container section of the html document -->
+  <footer>
+    <div class="container">
       <div class="footer__logo">⭐ Science for Little Stars</div>
-      <!-- This is a footer logo section of the html document -->
-      <div class="footer__links"> <!-- This is a footer links section of the html document -->
-        <a href="../index.html">Home</a> <!-- This is a footer home link of the html document -->
-        <a href="../quiz.html">Quiz</a> <!-- This is a footer quiz link of the html document -->
-        <a href="energy-electricity.html">Next Chapter</a>
-        <!-- This is a footer next chapter link of the html document -->
+      <div class="footer__links">
+        <a href="../index.html">Home</a>
+        <a href="../quiz.html">Quiz</a>
+        <a href="02_five-senses.html">Next Chapter</a>
       </div>
       <p>Authored by Ambreen Abdul Raheem. The Data Analyst And Web Developer. Copyright © 2026.</p>
-      <!-- This is a footer text section of the html document -->
-    </div> <!-- This is a container section of the html document -->
-  </footer> <!-- This is a footer section of the html document -->
+    </div>
+  </footer>
 
   <script src="../js/main.js"></script>
 </body>
